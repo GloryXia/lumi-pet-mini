@@ -1,0 +1,281 @@
+{
+  "ok": true,
+  "frames_root": "workflows/lumi-actions-v2/frames-stable",
+  "states": [
+    "idle",
+    "waving",
+    "jumping"
+  ],
+  "errors": [],
+  "warnings": [
+    "idle used extraction method stable-slots; confirm motion playback remains stable and unclipped",
+    "waving used extraction method stable-slots; confirm motion playback remains stable and unclipped",
+    "jumping used extraction method stable-slots; confirm motion playback remains stable and unclipped"
+  ],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "stable-slots",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "idle used extraction method stable-slots; confirm motion playback remains stable and unclipped"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "workflows/lumi-actions-v2/frames-stable/idle/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12965,
+          "bbox": [
+            42,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 63
+        },
+        {
+          "index": 1,
+          "file": "workflows/lumi-actions-v2/frames-stable/idle/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12973,
+          "bbox": [
+            42,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 75
+        },
+        {
+          "index": 2,
+          "file": "workflows/lumi-actions-v2/frames-stable/idle/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12981,
+          "bbox": [
+            42,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 75
+        },
+        {
+          "index": 3,
+          "file": "workflows/lumi-actions-v2/frames-stable/idle/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12863,
+          "bbox": [
+            42,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 82
+        },
+        {
+          "index": 4,
+          "file": "workflows/lumi-actions-v2/frames-stable/idle/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12960,
+          "bbox": [
+            42,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 74
+        },
+        {
+          "index": 5,
+          "file": "workflows/lumi-actions-v2/frames-stable/idle/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12972,
+          "bbox": [
+            42,
+            5,
+            150,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 71
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "stable-slots",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "waving used extraction method stable-slots; confirm motion playback remains stable and unclipped"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "workflows/lumi-actions-v2/frames-stable/waving/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12763,
+          "bbox": [
+            42,
+            5,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 127
+        },
+        {
+          "index": 1,
+          "file": "workflows/lumi-actions-v2/frames-stable/waving/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12689,
+          "bbox": [
+            42,
+            5,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 159
+        },
+        {
+          "index": 2,
+          "file": "workflows/lumi-actions-v2/frames-stable/waving/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12088,
+          "bbox": [
+            42,
+            5,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 125
+        },
+        {
+          "index": 3,
+          "file": "workflows/lumi-actions-v2/frames-stable/waving/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 12315,
+          "bbox": [
+            42,
+            5,
+            149,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 137
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "stable-slots",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "jumping used extraction method stable-slots; confirm motion playback remains stable and unclipped"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "workflows/lumi-actions-v2/frames-stable/jumping/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13064,
+          "bbox": [
+            37,
+            28,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 49
+        },
+        {
+          "index": 1,
+          "file": "workflows/lumi-actions-v2/frames-stable/jumping/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14490,
+          "bbox": [
+            32,
+            5,
+            160,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 112
+        },
+        {
+          "index": 2,
+          "file": "workflows/lumi-actions-v2/frames-stable/jumping/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14125,
+          "bbox": [
+            32,
+            5,
+            160,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 97
+        },
+        {
+          "index": 3,
+          "file": "workflows/lumi-actions-v2/frames-stable/jumping/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14493,
+          "bbox": [
+            32,
+            5,
+            160,
+            202
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 148
+        },
+        {
+          "index": 4,
+          "file": "workflows/lumi-actions-v2/frames-stable/jumping/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13092,
+          "bbox": [
+            36,
+            14,
+            156,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 46
+        }
+      ]
+    }
+  ]
+}

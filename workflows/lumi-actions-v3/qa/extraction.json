@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "source_size": [
+    2169,
+    725
+  ],
+  "pose_group_boundaries": [
+    0,
+    419,
+    862,
+    1304,
+    1742,
+    2169
+  ],
+  "transparent_pixels": 755992,
+  "partial_alpha_pixels": 815037,
+  "shared_scale": 0.30602782071097373,
+  "alpha_cleanup": "Generated alpha preserved within registered viewport; bbox based on alpha>1 plus8px padding excludes remote1/255 noise; hidden RGB cleared. Faint boundary alpha requires visual review.",
+  "frames": [
+    {
+      "slot": 0,
+      "source_bbox": [
+        17,
+        106,
+        401,
+        686
+      ],
+      "final_bbox": [
+        37,
+        27,
+        153,
+        202
+      ],
+      "source_boundary_max_alpha": 0
+    },
+    {
+      "slot": 1,
+      "source_bbox": [
+        17,
+        41,
+        439,
+        632
+      ],
+      "final_bbox": [
+        32,
+        6,
+        160,
+        185
+      ],
+      "source_boundary_max_alpha": 1
+    },
+    {
+      "slot": 2,
+      "source_bbox": [
+        5,
+        41,
+        441,
+        647
+      ],
+      "final_bbox": [
+        29,
+        6,
+        162,
+        190
+      ],
+      "source_boundary_max_alpha": 1
+    },
+    {
+      "slot": 3,
+      "source_bbox": [
+        0,
+        40,
+        422,
+        662
+      ],
+      "final_bbox": [
+        31,
+        6,
+        159,
+        195
+      ],
+      "source_boundary_max_alpha": 1
+    },
+    {
+      "slot": 4,
+      "source_bbox": [
+        18,
+        70,
+        404,
+        687
+      ],
+      "final_bbox": [
+        38,
+        15,
+        154,
+        202
+      ],
+      "source_boundary_max_alpha": 1
+    }
+  ]
+}

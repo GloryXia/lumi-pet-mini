@@ -1,0 +1,10 @@
+{
+  "decision": "accept",
+  "severity": "minor",
+  "failed_checks": [
+    "blind horizontal axis ambiguity at 022.5, 157.5, 202.5, 337.5"
+  ],
+  "labeled_evidence": "Normal-size labeled loop places each pose in the intended adjacent quadrant with a subtle lateral face and eye offset; four cardinals are unmistakable.",
+  "continuity_evidence": "All 16 poses remain registered, identity-preserving and smoothly ordered; continuity warnings are open gaps between limbs and costume, not accidental holes.",
+  "reviewed_by": "parent"
+}

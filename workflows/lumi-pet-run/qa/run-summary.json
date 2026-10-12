@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "run_dir": "workflows/lumi-pet-run",
+  "spritesheet": "assets/pets/lumi/spritesheet.webp",
+  "validation": "workflows/lumi-pet-run/final/validation-extended.json",
+  "chroma_despill": "workflows/lumi-pet-run/qa/chroma-despill-extended.json",
+  "contact_sheet": "assets/pets/lumi/animation-sheet-preview.png",
+  "direction_sheet": "workflows/lumi-pet-run/qa/look-directions.png",
+  "direction_semantics": "workflows/lumi-pet-run/qa/direction-semantics.json",
+  "blind_direction_validation": "workflows/lumi-pet-run/qa/direction-blind-validation.json",
+  "blind_review_resolution": "workflows/lumi-pet-run/qa/blind-review-resolution.json",
+  "continuity": "workflows/lumi-pet-run/qa/look-continuity.json",
+  "review": "workflows/lumi-pet-run/qa/review.json",
+  "package": "assets/pets/lumi",
+  "installed": false,
+  "installation_note": "Sandbox did not grant write permission to ~/.codex/pets/lumi; user can run bundled installer."
+}

@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "frames": [
+        "workflows/lumi-actions-v2/frames-stable/idle/00.png",
+        "workflows/lumi-actions-v2/frames-stable/idle/01.png",
+        "workflows/lumi-actions-v2/frames-stable/idle/02.png",
+        "workflows/lumi-actions-v2/frames-stable/idle/03.png",
+        "workflows/lumi-actions-v2/frames-stable/idle/04.png",
+        "workflows/lumi-actions-v2/frames-stable/idle/05.png"
+      ],
+      "method": "stable-slots"
+    },
+    {
+      "state": "waving",
+      "frames": [
+        "workflows/lumi-actions-v2/frames-stable/waving/00.png",
+        "workflows/lumi-actions-v2/frames-stable/waving/01.png",
+        "workflows/lumi-actions-v2/frames-stable/waving/02.png",
+        "workflows/lumi-actions-v2/frames-stable/waving/03.png"
+      ],
+      "method": "stable-slots"
+    },
+    {
+      "state": "jumping",
+      "frames": [
+        "workflows/lumi-actions-v2/frames-stable/jumping/00.png",
+        "workflows/lumi-actions-v2/frames-stable/jumping/01.png",
+        "workflows/lumi-actions-v2/frames-stable/jumping/02.png",
+        "workflows/lumi-actions-v2/frames-stable/jumping/03.png",
+        "workflows/lumi-actions-v2/frames-stable/jumping/04.png"
+      ],
+      "method": "stable-slots"
+    }
+  ]
+}

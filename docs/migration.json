@@ -1,0 +1,2486 @@
+{
+  "source_root": "/Users/xiachao/Documents/Codex/2026-09-28/yi",
+  "migration_date": "2026-10-12",
+  "files": [
+    {
+      "source": "work/lumi-chatgpt-app/server.js",
+      "target": "apps/mini/server.js",
+      "source_sha256": "0fdbdd32413913e5da03127f9bd1c0357078d42a2bd86791e9f6e0317b5e234d"
+    },
+    {
+      "source": "work/lumi-chatgpt-app/package-lock.json",
+      "target": "package-lock.json",
+      "source_sha256": "983d122db7b17d407538d2a8024c172a63aa17f16903822cd361b9dd74fb72b7"
+    },
+    {
+      "source": "work/lumi-chatgpt-app/package.json",
+      "target": "apps/mini/package.json",
+      "source_sha256": "fe781678ab825169d874c7b10f2a36d1555b15dd0fd13b69793ca2fce9ea2fee"
+    },
+    {
+      "source": "work/lumi-chatgpt-app/public/lumi-widget.html",
+      "target": "apps/mini/public/lumi-widget.html",
+      "source_sha256": "4f87f3db4039e054aba4c12e990e5a867b7c90f671adc6b0824cf88f268e555f"
+    },
+    {
+      "source": "work/lumi-chatgpt-app/assets/lumi.webp",
+      "target": "apps/mini/assets/lumi.webp",
+      "source_sha256": "c13de2cb095951e62c556c7eb399d5cac2aa8e4f9f7dc5bb73a8a7222743c840"
+    },
+    {
+      "source": "work/lumi-actions-v3/extract_alpha_row.py",
+      "target": "workflows/lumi-actions-v3/extract_alpha_row.py",
+      "source_sha256": "a0d52c1835f5d8dc70360060375b1c57e637f9cdd6558143c2f759e54e118faa"
+    },
+    {
+      "source": "work/lumi-actions-v3/jumping-source-v3.png",
+      "target": "workflows/lumi-actions-v3/jumping-source-v3.png",
+      "source_sha256": "1e5f68ea48480217e7f3d6fe25a3a1cf1def6efdf8fb6a40b6450fea99dba28d"
+    },
+    {
+      "source": "work/lumi-actions-v3/jumping-source-v2.png",
+      "target": "workflows/lumi-actions-v3/jumping-source-v2.png",
+      "source_sha256": "3f2d3c7561ee98c0bbe66f0242abea7dc80b3a850b3d02df54cbc9fa6b5be51a"
+    },
+    {
+      "source": "work/lumi-actions-v3/pet_request.json",
+      "target": "workflows/lumi-actions-v3/pet_request.json",
+      "source_sha256": "3a0f1e94824b23154b60f3382ecdbdcfbbaaada879e72f2f6af0765671cf688a"
+    },
+    {
+      "source": "work/lumi-actions-v3/compose_package.py",
+      "target": "workflows/lumi-actions-v3/compose_package.py",
+      "source_sha256": "2325f0f7e9530948f3ad0b2ae3f296b54af8fccbcd1a3883f8100484dda9ca13"
+    },
+    {
+      "source": "work/lumi-actions-v3/jumping-source.png",
+      "target": "workflows/lumi-actions-v3/jumping-source.png",
+      "source_sha256": "e3766cf7b0025e573fdf5efa16e306aacda87088487f483770929bac9e532291"
+    },
+    {
+      "source": "work/lumi-actions-v3/install_native_pet.py",
+      "target": "workflows/lumi-actions-v3/install_native_pet.py",
+      "source_sha256": "e8e53b256e6310d4a308bb2527d15f0b474635fab1e935a6a101b21ced0e85d5"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previous-actions-qa.json",
+      "target": "workflows/lumi-actions-v3/qa/previous-actions-qa.json",
+      "source_sha256": "9f907ee820898d03292dcc62ca0b534c2e3c11033a6eb92e8af4cad044495928"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/preview-integrity.json",
+      "target": "workflows/lumi-actions-v3/qa/preview-integrity.json",
+      "source_sha256": "acfcd5e42aa8d9e18a143e6a2bfa0db3eb7ea71dd22c84b30e29c9146b840d79"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/package-check.json",
+      "target": "workflows/lumi-actions-v3/qa/package-check.json",
+      "source_sha256": "a2b7c8a6fc8b302394c4fa0e99a590b6b5e0b79e462a5bb6974906b4b0a8e6bb"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/preservation.json",
+      "target": "workflows/lumi-actions-v3/qa/preservation.json",
+      "source_sha256": "5c302dcc96527fc621a96f9bde8133ed3eed61721321eab620b2fc4479a05edb"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/validation.json",
+      "target": "workflows/lumi-actions-v3/qa/validation.json",
+      "source_sha256": "332871e0b435e2785e8d2afa673340183e96d1b015f968a6adf4e2138874c6da"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/contact-sheet.png",
+      "target": "workflows/lumi-actions-v3/qa/contact-sheet.png",
+      "source_sha256": "339c9e17c6cdd7f4a33293bd81f29d7d80aaa123bcb6f9646d28cd790f767bc8"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/extraction.json",
+      "target": "workflows/lumi-actions-v3/qa/extraction.json",
+      "source_sha256": "be131811a8476b8f420d4d6afa59ce20a160a154686095725ca76236d1a53147"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/spin-light-dark.png",
+      "target": "workflows/lumi-actions-v3/qa/spin-light-dark.png",
+      "source_sha256": "aadf79f1a465ee50eebb7d58a33d246e52660c0dad5334f8a808ec538375cc4e"
+    },
+    {
+      "source": "work/lumi-actions-v3/prompts/jumping.md",
+      "target": "workflows/lumi-actions-v3/prompts/jumping.md",
+      "source_sha256": "96079674d32ff5e33b370d51d1f08c74d32ba1b7feca498344a58e76c878b414"
+    },
+    {
+      "source": "work/lumi-actions-v3/decoded/jumping.png",
+      "target": "workflows/lumi-actions-v3/decoded/jumping.png",
+      "source_sha256": "3f2d3c7561ee98c0bbe66f0242abea7dc80b3a850b3d02df54cbc9fa6b5be51a"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running/00.png",
+      "source_sha256": "a9875e2fe3642cc412626c57571dad7af4bfbdc492f1b4269a57982af7c9f87e"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running/01.png",
+      "source_sha256": "7aa5864799774e8d9c3e395a22db2a5f8651da8321f6583f2c35f7cd35967fac"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running/03.png",
+      "source_sha256": "38e9f9a7e5aabf9ed94cc863b83158b07c9a78fe5d02ab7387f18943707a75ee"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running/02.png",
+      "source_sha256": "c60e1cc66aae60be84d6fc880e3e9e1920b7624fd0098c6166d82a2df2a4f4bf"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running/05.png",
+      "source_sha256": "45b756a1b84c1cf04b2a95957d825726ee5437a3117c88291a1e2fe0632f80ef"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running/04.png",
+      "source_sha256": "33e64a07a6adeeda089aee1f164ee8440ba9da9f76ac73548fd6a3117f91f9bc"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/idle/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/idle/00.png",
+      "source_sha256": "4af0db9abd721694664869766c2f8c9b515b0aaf874c5bd062655169b44a3740"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/idle/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/idle/01.png",
+      "source_sha256": "415acb48156015cde1c9c6a6fba8af6081bfa9029ca16502598b50ad11d601a0"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/idle/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/idle/03.png",
+      "source_sha256": "abd9433b1ea6d4284d9ab567f903160ec1c4ba098f82d91b116dba26eb42d03e"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/idle/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/idle/02.png",
+      "source_sha256": "1af3b9215f83368d4626d7905ff7bdb913911a8440fe118a5b10d14e2daad613"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/idle/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/idle/05.png",
+      "source_sha256": "135be44489f20e0e3384a2b72fbdad23598cc03ed5279c42c3b05071da04c6f9"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/idle/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/idle/04.png",
+      "source_sha256": "59af00bdc5fb6ef50dcc6be96bb63e50316c54b2e1c260e94905f7fad2d35b48"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/00.png",
+      "source_sha256": "c03aba5b69a7601eb0f1a70566c3ccfca93b8c4e908e21ce71766169fdec02c8"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/01.png",
+      "source_sha256": "c61af5dd016dc4fe68955b9d34a8ad363ddee84cd32370e6d7bcef34588ea06f"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/03.png",
+      "source_sha256": "8cd71e8fe2524a1a21efd8282c394bafd8f7bf5c3c7bc54e2851bbdf6f447fb5"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/02.png",
+      "source_sha256": "71c681d92c6a682f6338d664e16a4e6483570e52c8c1dbb1f5aa6adec6f0c590"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/06.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/06.png",
+      "source_sha256": "4419ebe6fff440b5f7ba4fe4004ed392f7b2beecabd74d27ca2287b4f4c737a1"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/07.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/07.png",
+      "source_sha256": "b415862845815ca5e171c9425fce8aafe94b1556cda61cfcc535800151614cff"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/05.png",
+      "source_sha256": "7a5979c2448069e3257a2c7f4e0e25113a050751638c16325feba590e83995c6"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-right/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-right/04.png",
+      "source_sha256": "ba9db7c2df2ccfab60726aa1f435e7284791734f6b15817462f7e5b7125f03a1"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waving/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waving/00.png",
+      "source_sha256": "9d72cfb3f39bbac80198190a221e6fc9bda63db1e884a66c5ad61b4a905f4157"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waving/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waving/01.png",
+      "source_sha256": "1125f0234e824a2d0327eed5afe9f0c0bea6761ba1537ba781a0dfe02dca0805"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waving/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waving/03.png",
+      "source_sha256": "1e2a7a29fd4569aaf3e1d3317e4eca0d397f2cf33af241c2db5b28c71978aaa6"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waving/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waving/02.png",
+      "source_sha256": "51966646d64386b92262ecbaffa30b2410f0c04fabcf4fc63e1627fd0550b90d"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/00.png",
+      "source_sha256": "db812494649a5096ff87dfd7b6df9d1a6fe6bf1d541192509c765f06ce53b278"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/01.png",
+      "source_sha256": "36c5b1f671963924037bd426f530ff570341a82713f5b076db3d9cbd235ba5a2"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/03.png",
+      "source_sha256": "a70d6bbcc6b3f9ff1f2f18a40a9e60a975321a95b95d2c264619ca28dcf0fcfa"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/02.png",
+      "source_sha256": "487418be9bf5a7985de1c93095f6b8edc8b87c53ce04fbab8edca392dc9103d7"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/06.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/06.png",
+      "source_sha256": "4986aeccfe0a5c5021fde562e14fefc8b0e0bf4d328f3330282fff4cced82e2a"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/07.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/07.png",
+      "source_sha256": "109eb17744eff7584dda61aa9bebee59e97eeca3a5d69ad99208c7edc49f7e33"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/05.png",
+      "source_sha256": "871df732e2426d23f1dbd6db9c6d2312fbfa47882d97fcbca2e64668b573830f"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/failed/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/failed/04.png",
+      "source_sha256": "7ee7e534373d7474066dd791f99f29c5005aa3cf0235c31c4190f3c056ec7fbb"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/jumping/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/jumping/00.png",
+      "source_sha256": "c9d1cad119fc61ae49e3d0adab4e37ee99769e2bea0d179f417841a4f9602633"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/jumping/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/jumping/01.png",
+      "source_sha256": "69bc5e23305657e2a02e456937804aa96715d7b5aba8a0b37610aa5b98c1f820"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/jumping/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/jumping/03.png",
+      "source_sha256": "e5b527df84fa03fb3ebba3e2663f8b5969acbad08f229c75bc4e606b3ce3e293"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/jumping/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/jumping/02.png",
+      "source_sha256": "ddc4133d77e8d977ed04357ed8b816e7caac93acbf44af5a79b4170f42aa7693"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/jumping/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/jumping/04.png",
+      "source_sha256": "cbc412d2815c978f2cd3f27b3e72eefc0e3c2f2a4a1a6f270393074f9d712fb9"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waiting/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waiting/00.png",
+      "source_sha256": "92002c51ccb0815db92390890bb3a2185f7654add22333c0a1dda03af8edca01"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waiting/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waiting/01.png",
+      "source_sha256": "bc167c76adf90c424f479dfe72feecbabc7750cd3b6059a641e2c9333e1dad2c"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waiting/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waiting/03.png",
+      "source_sha256": "5fdc26865884c03c3d91f1ccf046ae6ee29427b12f3e8737871bd74bfaabd2fc"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waiting/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waiting/02.png",
+      "source_sha256": "01c393e49a8fe953dbec646bb5f3acbe4bd998302a6ac2e77f4f8539084e0747"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waiting/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waiting/05.png",
+      "source_sha256": "780df456a215cafc4467ddffa024001f4f647b3cfe2d1168cae9c9ef50b36b4e"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/waiting/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/waiting/04.png",
+      "source_sha256": "605e772c625f8bd8b58855589c5811675a7d5e11a7b8cbb24d086afe4ac2770c"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/review/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/review/00.png",
+      "source_sha256": "2e6b5abf454bb61739495ab598011097c1fd6ca5f9741a2067a735c830496c04"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/review/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/review/01.png",
+      "source_sha256": "ad9133c15e764fe24cec2dc86a7c48931c650e8012c896fd245292fca22e6be7"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/review/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/review/03.png",
+      "source_sha256": "c871e55ef9fc5e25f60a9da321c3cb15a4c7c9989150e925e911445a6b98178c"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/review/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/review/02.png",
+      "source_sha256": "13aea7f69f1f1ff7bda5028c957fd0c2ea87ac4525f12d6eb539952bf904c7a4"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/review/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/review/05.png",
+      "source_sha256": "5d42fd5d2cc6df35f85cf772112d3ab2419bf6392db60bafc8bece1d9751b667"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/review/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/review/04.png",
+      "source_sha256": "dca07df0c0e3cd6a47607b906578f07725df6346ed30f61415f7b1e296635b52"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/00.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/00.png",
+      "source_sha256": "3d68b9522e81643437867e9e0603473b715291d235ad80f35ffdf8d2d9ddbe37"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/01.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/01.png",
+      "source_sha256": "dd349add210d67f6b1d91a44a2662f3048908463add05407e530818f42bd7076"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/03.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/03.png",
+      "source_sha256": "8b13b8fd1e4923119efec3fd84d3891d8b10927428dea74ca14789c6d728f7be"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/02.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/02.png",
+      "source_sha256": "0448b868f08c5f2fd3800f13c27039e4182451f24d2749f4059997783428e7f5"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/06.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/06.png",
+      "source_sha256": "e33ad74c3c254c21cd4665bfa0b8234ec1666aff67560a73ef1ed09e5728d82a"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/07.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/07.png",
+      "source_sha256": "fc40064ff1015556c10f44ec4a14a0167a446f7d5a066e95e1f04559862866e8"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/05.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/05.png",
+      "source_sha256": "987759265a81fef51465d0d766de778f94525af03b9bfe11ee813b1e2e75706e"
+    },
+    {
+      "source": "work/lumi-actions-v3/final-frames/running-left/04.png",
+      "target": "workflows/lumi-actions-v3/final-frames/running-left/04.png",
+      "source_sha256": "31d269f8af776656413c61915db7103a05d5d04abf5619b4eb9a2c69614c32a9"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/waiting.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/waiting.gif",
+      "source_sha256": "a68baff1c09713cbcd5206ebe565edb14eab4eb91703fbe26c04db2160c56d0a"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/jumping.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/jumping.gif",
+      "source_sha256": "6531f03805a53991e65af98e4ead355b63483c2aec1c589d3e74abec3eafafdf"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/running.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/running.gif",
+      "source_sha256": "24da96a52a42b634443f86068fc381672b9a910cd812ab8a1595d2a6dddada7b"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/running-left.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/running-left.gif",
+      "source_sha256": "2da5d80ce2f48e01107aa0c25cc19a742e3f27822ddca0085eda4d782c017a8f"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/waving.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/waving.gif",
+      "source_sha256": "4420129657cce848637eb2a2f62b49f5395b70f0dae127303e1302f10e2875fd"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/failed.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/failed.gif",
+      "source_sha256": "5cdcb7c4bc02b1ab9089763fcf679bc7929b386fd76f954946c6070c6221c868"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/review.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/review.gif",
+      "source_sha256": "c7666af9c8e2571457d95925e504e749d820fcff585671dff55f605c709e44ac"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/idle.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/idle.gif",
+      "source_sha256": "728e0c0a25d4741af50fe1d7c8f621e88e832e42afe1fee36cd459e917e0f453"
+    },
+    {
+      "source": "work/lumi-actions-v3/qa/previews/running-right.gif",
+      "target": "workflows/lumi-actions-v3/qa/previews/running-right.gif",
+      "source_sha256": "ed4912d5ba9b14fbe402ca0739c35e175d27f92c37f80d9ccbd8d3a6858a91fb"
+    },
+    {
+      "source": "work/lumi-actions-v3/frames/jumping/00.png",
+      "target": "workflows/lumi-actions-v3/frames/jumping/00.png",
+      "source_sha256": "c9d1cad119fc61ae49e3d0adab4e37ee99769e2bea0d179f417841a4f9602633"
+    },
+    {
+      "source": "work/lumi-actions-v3/frames/jumping/01.png",
+      "target": "workflows/lumi-actions-v3/frames/jumping/01.png",
+      "source_sha256": "69bc5e23305657e2a02e456937804aa96715d7b5aba8a0b37610aa5b98c1f820"
+    },
+    {
+      "source": "work/lumi-actions-v3/frames/jumping/03.png",
+      "target": "workflows/lumi-actions-v3/frames/jumping/03.png",
+      "source_sha256": "e5b527df84fa03fb3ebba3e2663f8b5969acbad08f229c75bc4e606b3ce3e293"
+    },
+    {
+      "source": "work/lumi-actions-v3/frames/jumping/02.png",
+      "target": "workflows/lumi-actions-v3/frames/jumping/02.png",
+      "source_sha256": "ddc4133d77e8d977ed04357ed8b816e7caac93acbf44af5a79b4170f42aa7693"
+    },
+    {
+      "source": "work/lumi-actions-v3/frames/jumping/04.png",
+      "target": "workflows/lumi-actions-v3/frames/jumping/04.png",
+      "source_sha256": "cbc412d2815c978f2cd3f27b3e72eefc0e3c2f2a4a1a6f270393074f9d712fb9"
+    },
+    {
+      "source": "work/lumi-actions-v2/idle-source.png",
+      "target": "workflows/lumi-actions-v2/idle-source.png",
+      "source_sha256": "2d61a3b47c7f4b1b9f61cca2d5a46a31f12a0d403a0a735aa7920e48b70a119e"
+    },
+    {
+      "source": "work/lumi-actions-v2/new-rows.png",
+      "target": "workflows/lumi-actions-v2/new-rows.png",
+      "source_sha256": "b17d8e607e7879b894880dfd91a84c7c8720ccca86e12e0242447840a9b31bd8"
+    },
+    {
+      "source": "work/lumi-actions-v2/pet_request.json",
+      "target": "workflows/lumi-actions-v2/pet_request.json",
+      "source_sha256": "f6d5536607c18678870cf6221346b5a18b5c4af15ac6474c0fb3be494729e509"
+    },
+    {
+      "source": "work/lumi-actions-v2/waving-source.png",
+      "target": "workflows/lumi-actions-v2/waving-source.png",
+      "source_sha256": "845e5c70bbd29555930a81e3f4d9f03378673302689b5233781e424785d9435f"
+    },
+    {
+      "source": "work/lumi-actions-v2/jumping-source.png",
+      "target": "workflows/lumi-actions-v2/jumping-source.png",
+      "source_sha256": "5ac702cb815a17821d86f1b44925753fa6f1091829ae4a155640836b01c9353f"
+    },
+    {
+      "source": "work/lumi-actions-v2/original.webp",
+      "target": "workflows/lumi-actions-v2/original.webp",
+      "source_sha256": "9e1ca8638e1c16a880950b088ecc2651cb075947cd152d5ab352fbf0b5580c7d"
+    },
+    {
+      "source": "work/lumi-actions-v2/new-rows-clean.png",
+      "target": "workflows/lumi-actions-v2/new-rows-clean.png",
+      "source_sha256": "ab6d2975448b8f646159d428fcf4c268a4f56ad744a1f96d853596e5e6032f12"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/frames-manifest.json",
+      "target": "workflows/lumi-actions-v2/frames-stable/frames-manifest.json",
+      "source_sha256": "544902b9a798124797e2e8486f2d6b0c191ef440f237fe9ac9f346abf0214a25"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/frames-manifest.json",
+      "target": "workflows/lumi-actions-v2/frames/frames-manifest.json",
+      "source_sha256": "9ce840b8f61cb791d6c8663439dbe3cb4c6ee224b2126f2d61957f25c6847350"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/qa-inspect-jumping.png",
+      "target": "workflows/lumi-actions-v2/qa/qa-inspect-jumping.png",
+      "source_sha256": "eedf72d0273ddfb25e29e19ebff9d0b5ab5f4ab38a27def3a59098e33af7e506"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/qa-inspect-waving.png",
+      "target": "workflows/lumi-actions-v2/qa/qa-inspect-waving.png",
+      "source_sha256": "57229bd00a79df7e0151628e666515e8b5b63af6771cd4db01a1494726e402af"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/qa-inspect-idle.png",
+      "target": "workflows/lumi-actions-v2/qa/qa-inspect-idle.png",
+      "source_sha256": "7d6ff36d46886f4cf52863cf6bc239afd87e9f6d66116d46e4c512e72b5c9dae"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/preservation.json",
+      "target": "workflows/lumi-actions-v2/qa/preservation.json",
+      "source_sha256": "f2a041cd5e551ae5a8d72c35814a1fd5dbdc87e5a53d6c11d105c3aa9fd8691c"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/despill.json",
+      "target": "workflows/lumi-actions-v2/qa/despill.json",
+      "source_sha256": "c7744427512e47753cdd0046015c0841996b6f1d76b012a57a5ee39af9959f9f"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/validation.json",
+      "target": "workflows/lumi-actions-v2/qa/validation.json",
+      "source_sha256": "f02996e47044b2200b78b7f909532a32156b0994bec9409d8a6421b4df390863"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/contact-sheet.png",
+      "target": "workflows/lumi-actions-v2/qa/contact-sheet.png",
+      "source_sha256": "7bfaf572b71f32859d99f3686875d6708e5cc96737c0dd6f035ff3634689ef23"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/review-auto.json",
+      "target": "workflows/lumi-actions-v2/qa/review-auto.json",
+      "source_sha256": "eb0d3e2d530405176490d7f39de985440987272f2ecfc90ac25c64ac9ede0f4b"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/review.json",
+      "target": "workflows/lumi-actions-v2/qa/review.json",
+      "source_sha256": "7a6d6dd154c5e5149356144b8dc763bf37ea68fb32d7fe9c71019f70d2a0bae4"
+    },
+    {
+      "source": "work/lumi-actions-v2/prompts/waving.md",
+      "target": "workflows/lumi-actions-v2/prompts/waving.md",
+      "source_sha256": "739567cf545c9011fc18b5a86727b411ce6f75578f9be9cb0cb820ccaa2610e0"
+    },
+    {
+      "source": "work/lumi-actions-v2/prompts/idle.md",
+      "target": "workflows/lumi-actions-v2/prompts/idle.md",
+      "source_sha256": "178fc56c47b26c3c7cd769b29bfc28cba579bdb524b78b843f6e62380dad5fed"
+    },
+    {
+      "source": "work/lumi-actions-v2/prompts/jumping.md",
+      "target": "workflows/lumi-actions-v2/prompts/jumping.md",
+      "source_sha256": "47d9ddb71826f9e8c9f64b905c4dd3d08caaff30c032edae0a954395ac4d0df3"
+    },
+    {
+      "source": "work/lumi-actions-v2/decoded/waving.png",
+      "target": "workflows/lumi-actions-v2/decoded/waving.png",
+      "source_sha256": "845e5c70bbd29555930a81e3f4d9f03378673302689b5233781e424785d9435f"
+    },
+    {
+      "source": "work/lumi-actions-v2/decoded/idle.png",
+      "target": "workflows/lumi-actions-v2/decoded/idle.png",
+      "source_sha256": "2d61a3b47c7f4b1b9f61cca2d5a46a31f12a0d403a0a735aa7920e48b70a119e"
+    },
+    {
+      "source": "work/lumi-actions-v2/decoded/jumping.png",
+      "target": "workflows/lumi-actions-v2/decoded/jumping.png",
+      "source_sha256": "5ac702cb815a17821d86f1b44925753fa6f1091829ae4a155640836b01c9353f"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running/00.png",
+      "source_sha256": "a9875e2fe3642cc412626c57571dad7af4bfbdc492f1b4269a57982af7c9f87e"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running/01.png",
+      "source_sha256": "7aa5864799774e8d9c3e395a22db2a5f8651da8321f6583f2c35f7cd35967fac"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running/03.png",
+      "source_sha256": "38e9f9a7e5aabf9ed94cc863b83158b07c9a78fe5d02ab7387f18943707a75ee"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running/02.png",
+      "source_sha256": "c60e1cc66aae60be84d6fc880e3e9e1920b7624fd0098c6166d82a2df2a4f4bf"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running/05.png",
+      "source_sha256": "45b756a1b84c1cf04b2a95957d825726ee5437a3117c88291a1e2fe0632f80ef"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running/04.png",
+      "source_sha256": "33e64a07a6adeeda089aee1f164ee8440ba9da9f76ac73548fd6a3117f91f9bc"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/idle/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/idle/00.png",
+      "source_sha256": "4af0db9abd721694664869766c2f8c9b515b0aaf874c5bd062655169b44a3740"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/idle/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/idle/01.png",
+      "source_sha256": "415acb48156015cde1c9c6a6fba8af6081bfa9029ca16502598b50ad11d601a0"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/idle/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/idle/03.png",
+      "source_sha256": "abd9433b1ea6d4284d9ab567f903160ec1c4ba098f82d91b116dba26eb42d03e"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/idle/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/idle/02.png",
+      "source_sha256": "1af3b9215f83368d4626d7905ff7bdb913911a8440fe118a5b10d14e2daad613"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/idle/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/idle/05.png",
+      "source_sha256": "135be44489f20e0e3384a2b72fbdad23598cc03ed5279c42c3b05071da04c6f9"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/idle/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/idle/04.png",
+      "source_sha256": "59af00bdc5fb6ef50dcc6be96bb63e50316c54b2e1c260e94905f7fad2d35b48"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/00.png",
+      "source_sha256": "c03aba5b69a7601eb0f1a70566c3ccfca93b8c4e908e21ce71766169fdec02c8"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/01.png",
+      "source_sha256": "c61af5dd016dc4fe68955b9d34a8ad363ddee84cd32370e6d7bcef34588ea06f"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/03.png",
+      "source_sha256": "8cd71e8fe2524a1a21efd8282c394bafd8f7bf5c3c7bc54e2851bbdf6f447fb5"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/02.png",
+      "source_sha256": "71c681d92c6a682f6338d664e16a4e6483570e52c8c1dbb1f5aa6adec6f0c590"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/06.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/06.png",
+      "source_sha256": "4419ebe6fff440b5f7ba4fe4004ed392f7b2beecabd74d27ca2287b4f4c737a1"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/07.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/07.png",
+      "source_sha256": "b415862845815ca5e171c9425fce8aafe94b1556cda61cfcc535800151614cff"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/05.png",
+      "source_sha256": "7a5979c2448069e3257a2c7f4e0e25113a050751638c16325feba590e83995c6"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-right/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-right/04.png",
+      "source_sha256": "ba9db7c2df2ccfab60726aa1f435e7284791734f6b15817462f7e5b7125f03a1"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waving/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waving/00.png",
+      "source_sha256": "9d72cfb3f39bbac80198190a221e6fc9bda63db1e884a66c5ad61b4a905f4157"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waving/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waving/01.png",
+      "source_sha256": "1125f0234e824a2d0327eed5afe9f0c0bea6761ba1537ba781a0dfe02dca0805"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waving/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waving/03.png",
+      "source_sha256": "1e2a7a29fd4569aaf3e1d3317e4eca0d397f2cf33af241c2db5b28c71978aaa6"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waving/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waving/02.png",
+      "source_sha256": "51966646d64386b92262ecbaffa30b2410f0c04fabcf4fc63e1627fd0550b90d"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/00.png",
+      "source_sha256": "db812494649a5096ff87dfd7b6df9d1a6fe6bf1d541192509c765f06ce53b278"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/01.png",
+      "source_sha256": "36c5b1f671963924037bd426f530ff570341a82713f5b076db3d9cbd235ba5a2"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/03.png",
+      "source_sha256": "a70d6bbcc6b3f9ff1f2f18a40a9e60a975321a95b95d2c264619ca28dcf0fcfa"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/02.png",
+      "source_sha256": "487418be9bf5a7985de1c93095f6b8edc8b87c53ce04fbab8edca392dc9103d7"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/06.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/06.png",
+      "source_sha256": "4986aeccfe0a5c5021fde562e14fefc8b0e0bf4d328f3330282fff4cced82e2a"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/07.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/07.png",
+      "source_sha256": "109eb17744eff7584dda61aa9bebee59e97eeca3a5d69ad99208c7edc49f7e33"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/05.png",
+      "source_sha256": "871df732e2426d23f1dbd6db9c6d2312fbfa47882d97fcbca2e64668b573830f"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/failed/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/failed/04.png",
+      "source_sha256": "7ee7e534373d7474066dd791f99f29c5005aa3cf0235c31c4190f3c056ec7fbb"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/jumping/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/jumping/00.png",
+      "source_sha256": "58b192e7f302a0e5c48a02e1d415ee291c0057d4ec204d32f7f89960c4774fd5"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/jumping/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/jumping/01.png",
+      "source_sha256": "98a7dd0e1ff22012f88b6b532693c0361f6c35b5527033b0571592c9cad698ac"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/jumping/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/jumping/03.png",
+      "source_sha256": "d5de5d9c315b59f41a67aeecb10cb8b52044e07d85391ec66fe0460cfa0035ee"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/jumping/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/jumping/02.png",
+      "source_sha256": "6e0077a97686e8cae5a42cc8332095d18516dae72169fd816f29ade229d27394"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/jumping/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/jumping/04.png",
+      "source_sha256": "dc1455b54105ecc5b77e06b40de0d97cc27e213e7079b436c0857af971b7eeb0"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waiting/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waiting/00.png",
+      "source_sha256": "92002c51ccb0815db92390890bb3a2185f7654add22333c0a1dda03af8edca01"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waiting/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waiting/01.png",
+      "source_sha256": "bc167c76adf90c424f479dfe72feecbabc7750cd3b6059a641e2c9333e1dad2c"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waiting/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waiting/03.png",
+      "source_sha256": "5fdc26865884c03c3d91f1ccf046ae6ee29427b12f3e8737871bd74bfaabd2fc"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waiting/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waiting/02.png",
+      "source_sha256": "01c393e49a8fe953dbec646bb5f3acbe4bd998302a6ac2e77f4f8539084e0747"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waiting/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waiting/05.png",
+      "source_sha256": "780df456a215cafc4467ddffa024001f4f647b3cfe2d1168cae9c9ef50b36b4e"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/waiting/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/waiting/04.png",
+      "source_sha256": "605e772c625f8bd8b58855589c5811675a7d5e11a7b8cbb24d086afe4ac2770c"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/review/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/review/00.png",
+      "source_sha256": "2e6b5abf454bb61739495ab598011097c1fd6ca5f9741a2067a735c830496c04"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/review/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/review/01.png",
+      "source_sha256": "ad9133c15e764fe24cec2dc86a7c48931c650e8012c896fd245292fca22e6be7"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/review/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/review/03.png",
+      "source_sha256": "c871e55ef9fc5e25f60a9da321c3cb15a4c7c9989150e925e911445a6b98178c"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/review/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/review/02.png",
+      "source_sha256": "13aea7f69f1f1ff7bda5028c957fd0c2ea87ac4525f12d6eb539952bf904c7a4"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/review/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/review/05.png",
+      "source_sha256": "5d42fd5d2cc6df35f85cf772112d3ab2419bf6392db60bafc8bece1d9751b667"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/review/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/review/04.png",
+      "source_sha256": "dca07df0c0e3cd6a47607b906578f07725df6346ed30f61415f7b1e296635b52"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/00.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/00.png",
+      "source_sha256": "3d68b9522e81643437867e9e0603473b715291d235ad80f35ffdf8d2d9ddbe37"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/01.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/01.png",
+      "source_sha256": "dd349add210d67f6b1d91a44a2662f3048908463add05407e530818f42bd7076"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/03.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/03.png",
+      "source_sha256": "8b13b8fd1e4923119efec3fd84d3891d8b10927428dea74ca14789c6d728f7be"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/02.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/02.png",
+      "source_sha256": "0448b868f08c5f2fd3800f13c27039e4182451f24d2749f4059997783428e7f5"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/06.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/06.png",
+      "source_sha256": "e33ad74c3c254c21cd4665bfa0b8234ec1666aff67560a73ef1ed09e5728d82a"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/07.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/07.png",
+      "source_sha256": "fc40064ff1015556c10f44ec4a14a0167a446f7d5a066e95e1f04559862866e8"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/05.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/05.png",
+      "source_sha256": "987759265a81fef51465d0d766de778f94525af03b9bfe11ee813b1e2e75706e"
+    },
+    {
+      "source": "work/lumi-actions-v2/final-frames/running-left/04.png",
+      "target": "workflows/lumi-actions-v2/final-frames/running-left/04.png",
+      "source_sha256": "31d269f8af776656413c61915db7103a05d5d04abf5619b4eb9a2c69614c32a9"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/waiting.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/waiting.gif",
+      "source_sha256": "a68baff1c09713cbcd5206ebe565edb14eab4eb91703fbe26c04db2160c56d0a"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/jumping.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/jumping.gif",
+      "source_sha256": "a5e42ba70f1d9368fe916315007d90755debfecc12a8aeadcd7c3716b92979fc"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/running.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/running.gif",
+      "source_sha256": "24da96a52a42b634443f86068fc381672b9a910cd812ab8a1595d2a6dddada7b"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/running-left.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/running-left.gif",
+      "source_sha256": "2da5d80ce2f48e01107aa0c25cc19a742e3f27822ddca0085eda4d782c017a8f"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/waving.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/waving.gif",
+      "source_sha256": "4420129657cce848637eb2a2f62b49f5395b70f0dae127303e1302f10e2875fd"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/failed.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/failed.gif",
+      "source_sha256": "5cdcb7c4bc02b1ab9089763fcf679bc7929b386fd76f954946c6070c6221c868"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/review.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/review.gif",
+      "source_sha256": "c7666af9c8e2571457d95925e504e749d820fcff585671dff55f605c709e44ac"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/idle.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/idle.gif",
+      "source_sha256": "728e0c0a25d4741af50fe1d7c8f621e88e832e42afe1fee36cd459e917e0f453"
+    },
+    {
+      "source": "work/lumi-actions-v2/qa/previews/running-right.gif",
+      "target": "workflows/lumi-actions-v2/qa/previews/running-right.gif",
+      "source_sha256": "ed4912d5ba9b14fbe402ca0739c35e175d27f92c37f80d9ccbd8d3a6858a91fb"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/idle/00.png",
+      "target": "workflows/lumi-actions-v2/frames/idle/00.png",
+      "source_sha256": "894ab11cf6ef3b4d255daa791fd503098fcd060b94125f4cf736f3169f89259f"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/idle/01.png",
+      "target": "workflows/lumi-actions-v2/frames/idle/01.png",
+      "source_sha256": "b095815e680fd3057ea42bf02ed5fbd73168af68f6809f60a8e28f89127901bb"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/idle/03.png",
+      "target": "workflows/lumi-actions-v2/frames/idle/03.png",
+      "source_sha256": "a2d9051a09dc10f36abc4804ff604eef5ba779eb11c55495de4cf63f17a2d5b4"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/idle/02.png",
+      "target": "workflows/lumi-actions-v2/frames/idle/02.png",
+      "source_sha256": "1b3844fdaa6eb1a54cf2eb0b7500460d9accad94232bd0ec14d618fd19b0f030"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/idle/05.png",
+      "target": "workflows/lumi-actions-v2/frames/idle/05.png",
+      "source_sha256": "d4f03be66d60d7de4087fd984a749e3aca1c40c64e20ced7b92a29d86b90b3ce"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/idle/04.png",
+      "target": "workflows/lumi-actions-v2/frames/idle/04.png",
+      "source_sha256": "4674d7be988d620b264052c28207ef9abcf6bca33face9449cb445b1ea41b47b"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/waving/00.png",
+      "target": "workflows/lumi-actions-v2/frames/waving/00.png",
+      "source_sha256": "ff7232c68f44ed49bd1f8b2a022a7613dc33e69fc6c0c40ce96000403b713251"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/waving/01.png",
+      "target": "workflows/lumi-actions-v2/frames/waving/01.png",
+      "source_sha256": "4e552b051716ecaae41f614eb68dd2a602159b49f156737f6ea3f01ddd88a035"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/waving/03.png",
+      "target": "workflows/lumi-actions-v2/frames/waving/03.png",
+      "source_sha256": "fe063af0f576ef61f41625f61d64f7737cde904d98121965f1b189ed0970c746"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/waving/02.png",
+      "target": "workflows/lumi-actions-v2/frames/waving/02.png",
+      "source_sha256": "3cbdf4d0d0f79ef49947fa5c8981f0dc239532a4203914980cf570df10d5c0b5"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/jumping/00.png",
+      "target": "workflows/lumi-actions-v2/frames/jumping/00.png",
+      "source_sha256": "cf95753f6a3365e831060abb31b99480207e3d074b5879b75e942f7609af2313"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/jumping/01.png",
+      "target": "workflows/lumi-actions-v2/frames/jumping/01.png",
+      "source_sha256": "b95f2d978c64f66e66719e70ad0111bf243114a0772a7cad36571e52a17e73e4"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/jumping/03.png",
+      "target": "workflows/lumi-actions-v2/frames/jumping/03.png",
+      "source_sha256": "d56e42e4e88a3b7d7d87a062a96a7d4c2ec27c43d531dda727496ff273022eba"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/jumping/02.png",
+      "target": "workflows/lumi-actions-v2/frames/jumping/02.png",
+      "source_sha256": "6683b097e13cce76895a5615428c18bd821bd7c17eb9c2107f3dc7320d5ed995"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames/jumping/04.png",
+      "target": "workflows/lumi-actions-v2/frames/jumping/04.png",
+      "source_sha256": "f59f399758391fd93a28bcbe0080e2b7943240f5038030d000cf9f8bdf1058ad"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/idle/00.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/idle/00.png",
+      "source_sha256": "dcfb73941109af7ec07edbe44e3f19964307c88ae91a608df496352f988c779a"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/idle/01.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/idle/01.png",
+      "source_sha256": "b90295ab32045dc730b3a40e8a80689fa187368fdb55bd0098224e63eb202287"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/idle/03.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/idle/03.png",
+      "source_sha256": "3d25f1c2f5654232b9bd845c9478b9fb31e97e51240a7b4a66d15bbd3759a6bc"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/idle/02.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/idle/02.png",
+      "source_sha256": "b1e8a825ba4a27fe736de3ab59611c2718be23debdc6fefeb6df2c34610c5bce"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/idle/05.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/idle/05.png",
+      "source_sha256": "eb41e93a1981076d6f5991d756cce4844c2e5211b4ac0287f5fd0454065d862c"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/idle/04.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/idle/04.png",
+      "source_sha256": "5b7d118ed3afa66c7294203283f59bb621c99b2bc9d1037e2be9de2c33c2aa9f"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/waving/00.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/waving/00.png",
+      "source_sha256": "240ad464f6ef8a41c2e623ee14c78e6eb5f7ae7aada65242ec55edce45c568d5"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/waving/01.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/waving/01.png",
+      "source_sha256": "b1b24784ecbed16ff6e7d670304dd244e2e497a32842b69da40194426137e1fb"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/waving/03.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/waving/03.png",
+      "source_sha256": "59da1e9e68567adca10c9a4f7681a1ca5d849fc5ebe28977c22611460fa79c76"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/waving/02.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/waving/02.png",
+      "source_sha256": "40e10bd6d4241de4eb0b45e505b7ade2214ddad28882bb34599612bd5bbda27a"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/jumping/00.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/jumping/00.png",
+      "source_sha256": "58b5bc7e6eb02cff012fdc5e1796ec2dd92eeda745d7c7df6b767f228922c6d8"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/jumping/01.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/jumping/01.png",
+      "source_sha256": "de594d82dbecd5ee4ae44c1fe0035fa520644c80b777ff56010e9aedf7535e87"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/jumping/03.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/jumping/03.png",
+      "source_sha256": "88c6ef81378608f077b41a8d0d81b86eccda5fc241028de34c168b4ca89cade9"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/jumping/02.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/jumping/02.png",
+      "source_sha256": "0e20d89f1028866188d930c07f598ba37ff513ac58304827d1dc19573688f7af"
+    },
+    {
+      "source": "work/lumi-actions-v2/frames-stable/jumping/04.png",
+      "target": "workflows/lumi-actions-v2/frames-stable/jumping/04.png",
+      "source_sha256": "69afb1fe4f4e256a585112d631388990888e8a02eb89529786ff8f12433c9a3d"
+    },
+    {
+      "source": "work/lumi-pet-run/review-repair-source.png",
+      "target": "workflows/lumi-pet-run/review-repair-source.png",
+      "source_sha256": "0ba9458f9651c132c0165cfbbbf9c8721d4376bfa82262b27f60c34de47c0370"
+    },
+    {
+      "source": "work/lumi-pet-run/idle-source.png",
+      "target": "workflows/lumi-pet-run/idle-source.png",
+      "source_sha256": "352d8c01ae12a403233a92690ca2bc24407f22c91a534aba13f48eec9cd7387c"
+    },
+    {
+      "source": "work/lumi-pet-run/waiting-source.png",
+      "target": "workflows/lumi-pet-run/waiting-source.png",
+      "source_sha256": "994f8ec5131efa269d36350d4ed5eb964e2f65088165bc2f1d2f10615bd2555f"
+    },
+    {
+      "source": "work/lumi-pet-run/base-source.png",
+      "target": "workflows/lumi-pet-run/base-source.png",
+      "source_sha256": "0e6dd9fc933cd6d7c25a4eafa82b7bbb9a92c4bbe7a7f534860617681172e5eb"
+    },
+    {
+      "source": "work/lumi-pet-run/failed-source.png",
+      "target": "workflows/lumi-pet-run/failed-source.png",
+      "source_sha256": "d8b16c4cab87ada52b563bd6102b3fecb8aba4d30ebf7838a76a21452a70b637"
+    },
+    {
+      "source": "work/lumi-pet-run/pet_request.json",
+      "target": "workflows/lumi-pet-run/pet_request.json",
+      "source_sha256": "05e6b1c09ca67da2884230b12206b5c05fca787be1bd979655e000c0fb44b133"
+    },
+    {
+      "source": "work/lumi-pet-run/waving-source.png",
+      "target": "workflows/lumi-pet-run/waving-source.png",
+      "source_sha256": "2a9e940f26e90551ca68985b9e84a5cda93b8d18c7483629efdda5860351d3d3"
+    },
+    {
+      "source": "work/lumi-pet-run/jumping-source.png",
+      "target": "workflows/lumi-pet-run/jumping-source.png",
+      "source_sha256": "97003f4dfb1ea18357b60f62df507a04125d73b282d5d879f57fc636006b7245"
+    },
+    {
+      "source": "work/lumi-pet-run/imagegen-jobs.json",
+      "target": "workflows/lumi-pet-run/imagegen-jobs.json",
+      "source_sha256": "a2290807210a3b8683872fedde5fc5f1ed02b769382be54b868449b4d39fb60d"
+    },
+    {
+      "source": "work/lumi-pet-run/running-right-source.png",
+      "target": "workflows/lumi-pet-run/running-right-source.png",
+      "source_sha256": "73852af4656d073e59207cccad10612ba9a7d3753f289a5219def7d4d3cdd791"
+    },
+    {
+      "source": "work/lumi-pet-run/running-source.png",
+      "target": "workflows/lumi-pet-run/running-source.png",
+      "source_sha256": "e3225a69c963ad444c2de42402ab90652f0db458ebc579c84b96a6c0200d8ac8"
+    },
+    {
+      "source": "work/lumi-pet-run/look-row-9-source.png",
+      "target": "workflows/lumi-pet-run/look-row-9-source.png",
+      "source_sha256": "ea0998be4403673748497ef8015d0e23527ef924c780e988c38ecdfffb902ca7"
+    },
+    {
+      "source": "work/lumi-pet-run/running-left-source.png",
+      "target": "workflows/lumi-pet-run/running-left-source.png",
+      "source_sha256": "10950be174452077363e8b1d2399f11698c64723a44732c71f281e8cd867901a"
+    },
+    {
+      "source": "work/lumi-pet-run/review-source.png",
+      "target": "workflows/lumi-pet-run/review-source.png",
+      "source_sha256": "4d0bedf8f41b65a1b7c1afb71e84abc4056d1a6f0fdb9e42378b71a362d03ca9"
+    },
+    {
+      "source": "work/lumi-pet-run/look-cardinals-source.png",
+      "target": "workflows/lumi-pet-run/look-cardinals-source.png",
+      "source_sha256": "5e6e54e443137d7d691bbb51b3ab3ef295b2357681e1e4c4ec36a23cd83c9669"
+    },
+    {
+      "source": "work/lumi-pet-run/look-row-10-source.png",
+      "target": "workflows/lumi-pet-run/look-row-10-source.png",
+      "source_sha256": "d1fcce0195fd75251eba8dd3068fb3bef68991663cdc6b011d01726dd564d9a1"
+    },
+    {
+      "source": "work/lumi-pet-run/references/look-row-10-identity-board.png",
+      "target": "workflows/lumi-pet-run/references/look-row-10-identity-board.png",
+      "source_sha256": "56a8c2feb9f285064d641d438915cd58a168e6d4bb68089ad9845366afc77f47"
+    },
+    {
+      "source": "work/lumi-pet-run/references/canonical-base.png",
+      "target": "workflows/lumi-pet-run/references/canonical-base.png",
+      "source_sha256": "0e6dd9fc933cd6d7c25a4eafa82b7bbb9a92c4bbe7a7f534860617681172e5eb"
+    },
+    {
+      "source": "work/lumi-pet-run/references/reference-01.png",
+      "target": "workflows/lumi-pet-run/references/reference-01.png",
+      "source_sha256": "8fe0981c021f7fbc2391ce586ba98a3d59a19fc045822fddf8b0efb4ad93b705"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/frames/frames-manifest.json",
+      "source_sha256": "99a38767f7ea44e5f191363edab815a235df705ea7fe67bfae21a81f501ce463"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/chroma-despill-extended.json",
+      "target": "workflows/lumi-pet-run/qa/chroma-despill-extended.json",
+      "source_sha256": "87cb934be875cd5880a2a9797517a33617fa967b9f3bb39c258e1739fc1fa4d9"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/look-directions.png",
+      "target": "workflows/lumi-pet-run/qa/look-directions.png",
+      "source_sha256": "b91f0e1671ba1f9a1091e56b4822177ad9b69b6748e0a352022bd96c84fece70"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/look-continuity.json",
+      "target": "workflows/lumi-pet-run/qa/look-continuity.json",
+      "source_sha256": "bd890a518aea0fca5a4794b44c080553d4a25c1e471009bced157561cacf88db"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-pairs.png",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-pairs.png",
+      "source_sha256": "b4f09131081d75dab423a09105cc1d46f6028111bd753ae059060ad566d1fe04"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-verdicts-2.json",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-verdicts-2.json",
+      "source_sha256": "1e8083140131ad233e2034c7a6559067878a0962791dd4dce67b579e9b27b3cc"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/look-mechanics.md",
+      "target": "workflows/lumi-pet-run/qa/look-mechanics.md",
+      "source_sha256": "96fec4bd8026244df1d770830abdb442eb4b1d2d6103e041ac01250845cdbe0c"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/contact-sheet-extended.png",
+      "target": "workflows/lumi-pet-run/qa/contact-sheet-extended.png",
+      "source_sha256": "8c594d42c4d905a95973afecf7171156c3b1ca21c49bddc1a2c5c57572442c20"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/look-row-9-registration.json",
+      "target": "workflows/lumi-pet-run/qa/look-row-9-registration.json",
+      "source_sha256": "7dce6d85037b7c9f501afe7ab267adf02f5b04dd93a56dcac81485bc35edb779"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-verdicts-3.json",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-verdicts-3.json",
+      "source_sha256": "1e8083140131ad233e2034c7a6559067878a0962791dd4dce67b579e9b27b3cc"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/look-row-9-registered.png",
+      "target": "workflows/lumi-pet-run/qa/look-row-9-registered.png",
+      "source_sha256": "a467aaf4291c146707b942403b5d8857c4b48523511c3d6ea438303cc4cb9450"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/cardinal-anchors.json",
+      "target": "workflows/lumi-pet-run/qa/cardinal-anchors.json",
+      "source_sha256": "494cb30ad7bb3a4482351ee16e475e407b092ccbeda21c79546c6d68c23fb3a4"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/blind-review-resolution.json",
+      "target": "workflows/lumi-pet-run/qa/blind-review-resolution.json",
+      "source_sha256": "dc3ec311e1adce228313a76e107fc7690c402c2e16e07a3a0b496caa37a87131"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-answer-key.json",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-answer-key.json",
+      "source_sha256": "ea92a6c923b67b08838b1afec80cb920f89b7cf5d386cdbaaf4bde37b7eea6ad"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-verdicts-1.json",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-verdicts-1.json",
+      "source_sha256": "8787cf2d365bcf4e5d3ffacd36502fbfbf1c5d9088ec99062ba85cb14a96f90c"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-semantics.json",
+      "target": "workflows/lumi-pet-run/qa/direction-semantics.json",
+      "source_sha256": "a9860ae383565ced77078493ac24c4db6ef3edc167823a3fbd9c603cc9876228"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/contact-sheet.png",
+      "target": "workflows/lumi-pet-run/qa/contact-sheet.png",
+      "source_sha256": "2d26c1550200ef92118439f400f4fe29592551edfb1714dc560164c79b5450f0"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/review.json",
+      "target": "workflows/lumi-pet-run/qa/review.json",
+      "source_sha256": "f3a45c06334a0775760703881b968161ebb428c14d52254a268919098ed2a2da"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-verdicts.json",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-verdicts.json",
+      "source_sha256": "9821fe61a035ed5c25370790154820d24451c448ae257a4352cbaf46e97026e8"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/direction-blind-validation.json",
+      "target": "workflows/lumi-pet-run/qa/direction-blind-validation.json",
+      "source_sha256": "1f62ead8c8a1d9299829d4e80f05b9b7c07afc235d9f0055a0784cf6956f2e9e"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/run-summary.json",
+      "target": "workflows/lumi-pet-run/qa/run-summary.json",
+      "source_sha256": "21f17200e2e0b30f1ba95c69677e866713d53953df2f855450608031f72c3599"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/look-cardinals.md",
+      "target": "workflows/lumi-pet-run/prompts/look-cardinals.md",
+      "source_sha256": "dbdef604bf31e5dad507146ef2e00868ae91a05682ad090b6b35f0a622a3b3ea"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/base-pet.md",
+      "target": "workflows/lumi-pet-run/prompts/base-pet.md",
+      "source_sha256": "71c4bc6d89cb9f0c67477a9bfe12c5aeb67a527d1efe6ac6bb24d8704984a10a"
+    },
+    {
+      "source": "work/lumi-pet-run/final/spritesheet-extended.webp",
+      "target": "workflows/lumi-pet-run/final/spritesheet-extended.webp",
+      "source_sha256": "9e1ca8638e1c16a880950b088ecc2651cb075947cd152d5ab352fbf0b5580c7d"
+    },
+    {
+      "source": "work/lumi-pet-run/final/validation-extended.json",
+      "target": "workflows/lumi-pet-run/final/validation-extended.json",
+      "source_sha256": "25f0c77ca12073f9199c697e1c2854d453da041bdf7a201effda87782738e3a3"
+    },
+    {
+      "source": "work/lumi-pet-run/final/spritesheet-extended.png",
+      "target": "workflows/lumi-pet-run/final/spritesheet-extended.png",
+      "source_sha256": "8a6713af0ddc9053d6e2b949430f35d7d2fa02ebcdd6064bd58aaf090a4902ea"
+    },
+    {
+      "source": "work/lumi-pet-run/final/spritesheet.webp",
+      "target": "workflows/lumi-pet-run/final/spritesheet.webp",
+      "source_sha256": "ac6089b2e42f36a0e85a6d0a57816876f7d0ab94ef1713477be024cc45bdbf61"
+    },
+    {
+      "source": "work/lumi-pet-run/final/spritesheet-extended.json",
+      "target": "workflows/lumi-pet-run/final/spritesheet-extended.json",
+      "source_sha256": "3ffa3c5b48a27ae4f71868c923270ccd42e10988b162d27a3f2b946c022e5ea7"
+    },
+    {
+      "source": "work/lumi-pet-run/final/spritesheet.png",
+      "target": "workflows/lumi-pet-run/final/spritesheet.png",
+      "source_sha256": "f5570487ee31329c6185e65a0f158894ddb4a388f504e31ac25fd0d81e0c6c6e"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/waving.png",
+      "target": "workflows/lumi-pet-run/decoded/waving.png",
+      "source_sha256": "2a9e940f26e90551ca68985b9e84a5cda93b8d18c7483629efdda5860351d3d3"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-anchors-approved.png",
+      "target": "workflows/lumi-pet-run/decoded/look-anchors-approved.png",
+      "source_sha256": "7308145600af409b4de1a3cbef927522cab4d159d9f37516accc5c8c1c64649e"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-cardinals.png",
+      "target": "workflows/lumi-pet-run/decoded/look-cardinals.png",
+      "source_sha256": "5e6e54e443137d7d691bbb51b3ab3ef295b2357681e1e4c4ec36a23cd83c9669"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/failed.png",
+      "target": "workflows/lumi-pet-run/decoded/failed.png",
+      "source_sha256": "d8b16c4cab87ada52b563bd6102b3fecb8aba4d30ebf7838a76a21452a70b637"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/review.png",
+      "target": "workflows/lumi-pet-run/decoded/review.png",
+      "source_sha256": "0ba9458f9651c132c0165cfbbbf9c8721d4376bfa82262b27f60c34de47c0370"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/idle.png",
+      "target": "workflows/lumi-pet-run/decoded/idle.png",
+      "source_sha256": "352d8c01ae12a403233a92690ca2bc24407f22c91a534aba13f48eec9cd7387c"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-row-9.png",
+      "target": "workflows/lumi-pet-run/decoded/look-row-9.png",
+      "source_sha256": "ea0998be4403673748497ef8015d0e23527ef924c780e988c38ecdfffb902ca7"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/running-right.png",
+      "target": "workflows/lumi-pet-run/decoded/running-right.png",
+      "source_sha256": "73852af4656d073e59207cccad10612ba9a7d3753f289a5219def7d4d3cdd791"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-row-10.png",
+      "target": "workflows/lumi-pet-run/decoded/look-row-10.png",
+      "source_sha256": "d1fcce0195fd75251eba8dd3068fb3bef68991663cdc6b011d01726dd564d9a1"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/base.png",
+      "target": "workflows/lumi-pet-run/decoded/base.png",
+      "source_sha256": "0e6dd9fc933cd6d7c25a4eafa82b7bbb9a92c4bbe7a7f534860617681172e5eb"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/waiting.png",
+      "target": "workflows/lumi-pet-run/decoded/waiting.png",
+      "source_sha256": "994f8ec5131efa269d36350d4ed5eb964e2f65088165bc2f1d2f10615bd2555f"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/jumping.png",
+      "target": "workflows/lumi-pet-run/decoded/jumping.png",
+      "source_sha256": "97003f4dfb1ea18357b60f62df507a04125d73b282d5d879f57fc636006b7245"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/running.png",
+      "target": "workflows/lumi-pet-run/decoded/running.png",
+      "source_sha256": "e3225a69c963ad444c2de42402ab90652f0db458ebc579c84b96a6c0200d8ac8"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/running-left.png",
+      "target": "workflows/lumi-pet-run/decoded/running-left.png",
+      "source_sha256": "10950be174452077363e8b1d2399f11698c64723a44732c71f281e8cd867901a"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-anchors/000.png",
+      "target": "workflows/lumi-pet-run/decoded/look-anchors/000.png",
+      "source_sha256": "ab80a2cd42502d4e2a40328a53f4aad9efc58bc45e868428f9856d9077d6119a"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-anchors/270.png",
+      "target": "workflows/lumi-pet-run/decoded/look-anchors/270.png",
+      "source_sha256": "76a535f389a10703c0bdd0c6fd0471884b79e66c58df4a5db25ddef9dc998cb8"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-anchors/090.png",
+      "target": "workflows/lumi-pet-run/decoded/look-anchors/090.png",
+      "source_sha256": "da24f05d41a85877f3440ed9fadb7a49055a4854153c2891ff38721b54c9c479"
+    },
+    {
+      "source": "work/lumi-pet-run/decoded/look-anchors/180.png",
+      "target": "workflows/lumi-pet-run/decoded/look-anchors/180.png",
+      "source_sha256": "c02d7e6d8ebee763aa16ddc1209795ceb0ce37ed2fb11de127467434be92e8b4"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/waving.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/waving.md",
+      "source_sha256": "d7e30e716c250d9871b43accc300adc4f0a562d31bcadddfc32c2b8d3195ff1d"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/waiting.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/waiting.md",
+      "source_sha256": "7a9a806d1b1dae0ece28541550ee66f95fbe5dc7eecfb0606b54bb18036bff35"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/running-left.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/running-left.md",
+      "source_sha256": "fcb658bee8c06b8ced53ef34234af8a1bc777b72c67bbae49d1acedfe2bff6ae"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/running.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/running.md",
+      "source_sha256": "421f9f15261cc1eb9bd488d9fcbd04b51817ebed0311dcceee9edc451a3e78c5"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/failed.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/failed.md",
+      "source_sha256": "0f80ab62ba350c409f4e0e8c1e9747f8a62ea48b431b131bd1cbbf3893710428"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/running-right.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/running-right.md",
+      "source_sha256": "d5dcf6f6f9fcb1f6a6dfebb40c88287294ac4538b3b357ab94b68652a48cd488"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/idle.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/idle.md",
+      "source_sha256": "8bd335c199b7a399989d27d2ced38d39de8923fa6d9346fe9f74b1aecc61ed47"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/look-row-9.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/look-row-9.md",
+      "source_sha256": "cde6d19d02cdf8bc49b365c78e0bac3ca1ea2d3e26a2182a115c9517b1f62829"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/review.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/review.md",
+      "source_sha256": "cb451133b6af277b6e7e596d6559c93ca36dbef3f99eb33b0c7f589d6ab45f40"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/jumping.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/jumping.md",
+      "source_sha256": "5225722ac580709b1a1820f107dbdf4f5e7cffbe00418f191b3b7667e0a91451"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/row-retries/look-row-10.md",
+      "target": "workflows/lumi-pet-run/prompts/row-retries/look-row-10.md",
+      "source_sha256": "c486e2a7b9ff620bd22bbab09d3de14940f64bb024752b5247e9d128d91a4fe0"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/look-anchor-repairs/000.md",
+      "target": "workflows/lumi-pet-run/prompts/look-anchor-repairs/000.md",
+      "source_sha256": "d71eb9c7d7823d83cb765c78d0c078a134cb68cfa0b6f32fc71b530ac9ef8a71"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/look-anchor-repairs/180.md",
+      "target": "workflows/lumi-pet-run/prompts/look-anchor-repairs/180.md",
+      "source_sha256": "f6e3806954db7d9d7d1cb93e66e8d55684755649d2c7cf95c8b67431f318aa19"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/look-anchor-repairs/270.md",
+      "target": "workflows/lumi-pet-run/prompts/look-anchor-repairs/270.md",
+      "source_sha256": "9bcb566ee14fd0fe372108cc1b15a5f9be27fa1c7fcf4a3894bfd7cab97901a6"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/look-anchor-repairs/090.md",
+      "target": "workflows/lumi-pet-run/prompts/look-anchor-repairs/090.md",
+      "source_sha256": "ab340b25b39ec39b6efc0567a0bc9a033a4c9ba620304451d5ac9312920d2af6"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/waving.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/waving.md",
+      "source_sha256": "76a005b9cdeb9e5a245a1ca87f1a3a14cc16f2a2161d6a067295b8f4f8238987"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/waiting.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/waiting.md",
+      "source_sha256": "e0adeaf912734d56521d129b2fec9e1b256f7c4842de4c83195f43f36d7b7fb7"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/running-left.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/running-left.md",
+      "source_sha256": "d422c646490c7f3e64a6c0f87db8427cb2008b7fd8c9bc60408da018bb01daea"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/running.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/running.md",
+      "source_sha256": "f75faeb458494f33899d89543f29487c152f34b62a023a91f4bc1944061bc722"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/failed.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/failed.md",
+      "source_sha256": "c70aa4041659a461b0fefc30f23124ac51feec1ca850e6ad68bdd21bceed44cc"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/running-right.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/running-right.md",
+      "source_sha256": "7c538342b79e49455829cbdd99010a22c88130a98d1e061296a197724675f1b8"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/idle.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/idle.md",
+      "source_sha256": "b251530b61a4b89e74ecb3d4a91bdd45c13eaaa462a2dc8b3dee4e98c7c29bcf"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/look-row-9.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/look-row-9.md",
+      "source_sha256": "38c741f8549607e0f6af8842a65cac3ad8ec7c55ed22b3b96cdd607f83f00f79"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/review.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/review.md",
+      "source_sha256": "2ae26df87f7b5fa8c5798f4afd5608c0d8132f1b773e0bfe6071af4d7f1336f9"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/jumping.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/jumping.md",
+      "source_sha256": "85d662547928fcef5c5cd2be142418d0022b3ce3be9bc31ef51bb72de4a84792"
+    },
+    {
+      "source": "work/lumi-pet-run/prompts/rows/look-row-10.md",
+      "target": "workflows/lumi-pet-run/prompts/rows/look-row-10.md",
+      "source_sha256": "cc74f54bda19db3692f14c49991661bd93adf26020e832904774f184fb884a72"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/waiting.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/waiting.gif",
+      "source_sha256": "bd239e17da08a11ec8f9f741b54f9f052e0b4961bf6802f55c9b0fd336745b25"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/jumping.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/jumping.gif",
+      "source_sha256": "651189521fcbcb1eb328ba4739bb749598e8878c85075eb81ec6461e4c61767d"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/running.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/running.gif",
+      "source_sha256": "12ff33031201dcd8a3eff928cc8e90f8519472a48f31a783761b73bb4ce805e9"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/running-left.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/running-left.gif",
+      "source_sha256": "1df94d59390c6f9500017346f82e3c5582fe2addfb82e2fd231fc66cc1a7a410"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/waving.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/waving.gif",
+      "source_sha256": "b2d5f594b70fd3d9d89a6f267ef6910f45880ea663be8176328a982ce861e376"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/failed.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/failed.gif",
+      "source_sha256": "58837a7073272ada0ebe8d244831a0f82e776c30f407bbb51ee6d5bbb51d3021"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/review.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/review.gif",
+      "source_sha256": "9e156057b43b594cae461ec73214e9bfbd62035b7eadc74f3b2977a4b5ce6752"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/idle.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/idle.gif",
+      "source_sha256": "ee375509eed5a0aaae5c1c104c353d0e3668508d1d3956d68a0deabb3d0e8866"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/previews/running-right.gif",
+      "target": "workflows/lumi-pet-run/qa/previews/running-right.gif",
+      "source_sha256": "d0df6b6ec436076c38c92f3d7cebe87c9e00eebb63fba58c98ed42d7e8eefbc2"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/running/review.json",
+      "source_sha256": "e7f12ab46625fab1c77ff3478d54eb95036f4f296b358ce0fccbeb0f8bdd2807"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/review.json",
+      "source_sha256": "2952f63e30bee68199ec6ffb306e9c9e8f95704f07ded214319d3a91f259c5a9"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/review.json",
+      "source_sha256": "4454eb9f0388a711169e5ffd993693307d8ca61941c42b3cda6d0bee516ce7c6"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waving/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/waving/review.json",
+      "source_sha256": "24b43b21127d16febd779e1bd3af38229fe618f1e478fddf001c61d42ce57687"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/review.json",
+      "source_sha256": "5f0ea81db410ec39595254a510f9dc45d2e0274d4d7950ed95d33791f8dd9444"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/review.json",
+      "source_sha256": "3fa46ca1a4679a2aaa7e1da208b6196c720f28ea856a446a07a0d0b14279a101"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/review.json",
+      "source_sha256": "e8dde4a1ef546138bb70a3f2b05ddae850d6b7b427d1e716c66216a7252073bb"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/review/review.json",
+      "source_sha256": "fecd260dc65d2e6be0f86e6dbf3a33bffe087d7ba072ebdc0d91bcb57be7cc94"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/review.json",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/review.json",
+      "source_sha256": "01ae1c1466e387d44a554628fda93ceafa24f2d6cc98bada986814e65f9d2b0d"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/frames-manifest.json",
+      "source_sha256": "bea3ee64553dbd2cf8e12ffcfa58ea5f3e469cfeb973341fa25904d1d3aa237e"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/00.png",
+      "source_sha256": "cd4faf70af1e9279d64c587626fe244a99b0698d96c1d65fcee4be13cfa97d38"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/01.png",
+      "source_sha256": "beb05b17e39da64a32bc186f0652a4202d5691aa9b4df0e4d308cd1e0d92b410"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/03.png",
+      "source_sha256": "c086bbd97f6508cc8eb25a46e7a7d5e8a8db47dc8cd7b768acec31c9ecfec60f"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/02.png",
+      "source_sha256": "e86764612d7a9d9fe24e5dde4c6352d270392f090f2b29505196f7538575c87f"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/06.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/06.png",
+      "source_sha256": "48b7b07d225d833f35a690ac35af5277756620749c0ce546e7fd9788cecc3f0e"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/07.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/07.png",
+      "source_sha256": "6def2a5312a29453eda00616bd296b6c3df404da040d0e0da2d8c1c952096de0"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/05.png",
+      "source_sha256": "de13eb857feefca75a3620528f6e5b7edd18bbbebc0c1e22f760d3549b1a20ed"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-left/frames/running-left/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-left/frames/running-left/04.png",
+      "source_sha256": "47daa9901d441fa8506fcbd6c26a50a272ffcb711c6e7ad81f7a19ee9fbd0844"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/frames-manifest.json",
+      "source_sha256": "fa466409133d6891e8a2b80ce868b4825c955639efc3626a52ffe8619f32dd15"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/review/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/review/00.png",
+      "source_sha256": "6e3dd5fd8bb890b6431598f1df054c0f93824944105718706fb76ac0f4ca3fa8"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/review/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/review/01.png",
+      "source_sha256": "269988bc8b80ccbce5c98b80bb5d307f3e9953fd7d212938c711cf6914b647a0"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/review/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/review/03.png",
+      "source_sha256": "fd20b540f9cbc4878f440cd6ce9f32d7bb6fe850dd9633375da069cc65888b87"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/review/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/review/02.png",
+      "source_sha256": "d1f47f198e6072d66fd5c8a88019b80e2a3cff20b734638cfb9665729b80aea0"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/review/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/review/05.png",
+      "source_sha256": "8b4379aa72c482fc4311396d19f57970858571b29421ff5e91b0b2d5eb36e440"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/review/frames/review/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/review/frames/review/04.png",
+      "source_sha256": "aea3d3750064eaba98d3c5c3a85f4bb19b800efe719e45469d990b2ebce9b562"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/frames-manifest.json",
+      "source_sha256": "ddeabc83808b7cae850573b43e920208fa9a23815cf9e4d77c9a438a1058e9fd"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/waiting/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/waiting/00.png",
+      "source_sha256": "eebb948e100d8c3e481ccb1d28c674fdf7d38086d90fa4e49ad63ee63078ed95"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/waiting/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/waiting/01.png",
+      "source_sha256": "e7c2fb9bda30c8709efade11676369d9b9becc308be9f9596757e66da2ed225e"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/waiting/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/waiting/03.png",
+      "source_sha256": "20cae93df33a3e3beade7b6d137cd5a5cea1d03bd84473b5e0986d281b8c78c6"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/waiting/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/waiting/02.png",
+      "source_sha256": "c779d9201b27c8d7758cf74601ab0f59a663b709b2583562b47ba79477ecc84c"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/waiting/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/waiting/05.png",
+      "source_sha256": "f6f69c1929bcb74250ee49e67da53e9a5ae3bac0e006b624f33d4cebef491343"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waiting/frames/waiting/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waiting/frames/waiting/04.png",
+      "source_sha256": "19e1e0aec61a2c269e1846637dbf5d6b2cfc2736b05289a87f65c87cf498cb41"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/frames/frames-manifest.json",
+      "source_sha256": "f218112c849b09b4630d2782133bad9960508b429cf91542245837dbe885b638"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/frames/jumping/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/frames/jumping/00.png",
+      "source_sha256": "94fea1ee55fb8678a6b5c240c270b6c42a5f2b255fcc5851e0c1e9edcd5b470a"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/frames/jumping/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/frames/jumping/01.png",
+      "source_sha256": "e02c83d7e6fe76e02e0bf7ac59d7e1e841685838a69821a1c048980d7b9f7de5"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/frames/jumping/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/frames/jumping/03.png",
+      "source_sha256": "235a63da69200c76ababf4d302dec95d1983c57664161282dee145971df39c0c"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/frames/jumping/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/frames/jumping/02.png",
+      "source_sha256": "c20362e3311f0b5095956a6928058dd70ac55ff63523bd8131cb4c8cf6f5f42f"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/jumping/frames/jumping/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/jumping/frames/jumping/04.png",
+      "source_sha256": "c2c4abe2350c340ee8ce9ff05f4229694a9e7857abbaf3e92bcc9791d1f31d7a"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/frames-manifest.json",
+      "source_sha256": "2a6869a1e4f646d06b1f370b8ef8531d2076dd5c16c59b4a778a1f5c9f1441c7"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/00.png",
+      "source_sha256": "98a55f8d5660b8ca48b939714033ebc3c058512a6311fc34bc834cb6f894101d"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/01.png",
+      "source_sha256": "20af58235692416d4d53a92f41a577ebfed985733815f5d051b2adbd426ded84"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/03.png",
+      "source_sha256": "8da2cf9c57939e44fa1aa3186d65ff1f969f635e91f5ee818cd29878e0c06a3b"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/02.png",
+      "source_sha256": "9ce1ffc52121904db96be7fa16d8d9ab2a0102f7027f9edc79dc1831b0b6c71e"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/06.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/06.png",
+      "source_sha256": "f5d00f01f676d2a56a683ff07e23b5b54ba5d157cb132331564f8783619f21f2"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/07.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/07.png",
+      "source_sha256": "4ce67fdec1b564ae7ba7c5c0ffc4f4402fadf2f65f06bc2af13763b3eaa01b79"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/05.png",
+      "source_sha256": "bfb64454fa6ec7729543d9c6bdcc338e22ed4aaf3125a9bfc249c6e30d568be4"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/failed/frames/failed/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/failed/frames/failed/04.png",
+      "source_sha256": "aabb5ba0f94d8e60da8286945b65d6d12220b5745e60d43538d403110d170f37"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waving/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/waving/frames/frames-manifest.json",
+      "source_sha256": "70182270c0209622567da305a48c8c120f48ed3e46f4e20b231af7e9c76ac0fa"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waving/frames/waving/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waving/frames/waving/00.png",
+      "source_sha256": "7a664728a7fff46b91a5865d5e8053798b81a9d491c888bcd6af4b81abb82fdb"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waving/frames/waving/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waving/frames/waving/01.png",
+      "source_sha256": "d6e3876b671f461c48f6febb9385d23bb0474d37a56281c9d43fc8264a2db34b"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waving/frames/waving/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waving/frames/waving/03.png",
+      "source_sha256": "b8ab0b5eeade0de69ef0b3eadcaa7782e5ec31e206c1068d6de73b76a2e5ae72"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/waving/frames/waving/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/waving/frames/waving/02.png",
+      "source_sha256": "1df26e0976c2f7d4d6c5ea4943a082de0d4d89575d17acf53288829c12cf45cf"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/frames-manifest.json",
+      "source_sha256": "e40a928f7a742755bffd1d29243b1ef5776ec576858f46f03ef2754790d650fd"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/00.png",
+      "source_sha256": "33e9dd70f5f9e80484f41906e4d3439d0b0ec4e734a9fee651d2e55ecc4ee8b4"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/01.png",
+      "source_sha256": "a35163289c675031688e55836104160df3a859d68b5bf47bf72a3ec41a9a33ff"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/03.png",
+      "source_sha256": "54f4a5f9299ffa64a01c5429c26a7294e1e65b3c0d346cec595e1f6cdddce5b0"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/02.png",
+      "source_sha256": "097f045b9ed804825005cdd434abd63f108f5c3969d86dcb033c7a3e9e34a1ed"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/06.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/06.png",
+      "source_sha256": "75e94d1d1936ec3a82e3ce538f9e6e66a06eebd8e7a666e9c4d98c123d3b1034"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/07.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/07.png",
+      "source_sha256": "cbb699e530081f2ab2bb54d064a743366c18b19e2e09ba99286455ca0ec75fa5"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/05.png",
+      "source_sha256": "15fb9dcad70794e6a29dbba15e8e2726e5e56464029991bb86356a05ea4310f4"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running-right/frames/running-right/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running-right/frames/running-right/04.png",
+      "source_sha256": "91384b9a952a7e91b44a52c2d1bedb94430adf5338f583ea6a65b12e53e26cd5"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/frames-manifest.json",
+      "source_sha256": "13377c1b518ec563bb70df001706818c5ad641b5dfbb233185f47e1099680b57"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/idle/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/idle/00.png",
+      "source_sha256": "a9b6f46b3a1e44da9c2d6dd18b85a2d5bf26f8cb2486bdacc2c2ab6e04c753cc"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/idle/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/idle/01.png",
+      "source_sha256": "fdab2db3986e3d0ee6091aa2fec3d0cbb8fdad018a9d6cfe453385572b39d243"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/idle/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/idle/03.png",
+      "source_sha256": "0a90a7d0a11080d0c969dee124726d8768466702460983c408df4fbb7e4262c8"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/idle/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/idle/02.png",
+      "source_sha256": "1fe6f24c3bb5b875ebac7da49035513ad019c73abfdd6b62da4c2373f92a0fea"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/idle/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/idle/05.png",
+      "source_sha256": "77397af278db8810695e529482ba1919f872882084b027616c4ac9b27f05ed40"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/idle/frames/idle/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/idle/frames/idle/04.png",
+      "source_sha256": "54f53264c97abfdee0a237421bd07d7593f6b5bd3dc521884ec9eef7f3825e81"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/frames-manifest.json",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/frames-manifest.json",
+      "source_sha256": "b60e8b4e5456638442e208f25b2732f7f24ab4b4d67b45dd53aada14b2f2794c"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/running/00.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/running/00.png",
+      "source_sha256": "2272fe0e655de036b89567d5b7e5cf3a1c8961dbc7a06b67840cc2f7e0b26684"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/running/01.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/running/01.png",
+      "source_sha256": "06f8a22b9619646cb25930db4b3bcee69df19e6cf8339e2459d62df5f383a87b"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/running/03.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/running/03.png",
+      "source_sha256": "376a10b0e52d6a5c95a939196386b99e21540c7eb50cb6833032c95950b7fdba"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/running/02.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/running/02.png",
+      "source_sha256": "91fb7a0f8fd0f6fdfecfca5c66fc676a256c5b1e98d7ceea7308141f4152d8ac"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/running/05.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/running/05.png",
+      "source_sha256": "f1f2460fefcc786133eba9d80dbd5e0a4ca5e4fcf144aa1c7c64dab28a7cbdd4"
+    },
+    {
+      "source": "work/lumi-pet-run/qa/rows/running/frames/running/04.png",
+      "target": "workflows/lumi-pet-run/qa/rows/running/frames/running/04.png",
+      "source_sha256": "72bcaee83b1f78e96501bd76dd89b788464da880f404680fbedaf4b7d1f5a257"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running/00.png",
+      "target": "workflows/lumi-pet-run/frames/running/00.png",
+      "source_sha256": "75463af6b0aef2b04c176dfc6272726e1b3c0798467e7102e963c8d2b68419f0"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running/01.png",
+      "target": "workflows/lumi-pet-run/frames/running/01.png",
+      "source_sha256": "27f267ed85def5f5fe99f5918c63322fdc2075701528549e4d71344cafeb87cb"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running/03.png",
+      "target": "workflows/lumi-pet-run/frames/running/03.png",
+      "source_sha256": "34f0cadc56d9d2378d806d28d9c92757dd97c30ea8f4ca924bd25b419f518a47"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running/02.png",
+      "target": "workflows/lumi-pet-run/frames/running/02.png",
+      "source_sha256": "40844ab94ee373d87693e8e2c424c02aec2809ed0c00f5f3960ed9670ccbeca9"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running/05.png",
+      "target": "workflows/lumi-pet-run/frames/running/05.png",
+      "source_sha256": "b02f3d29f9760f53d6da28868e0e1f9d41350771ca57daaac8d288ab4a0dbfe7"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running/04.png",
+      "target": "workflows/lumi-pet-run/frames/running/04.png",
+      "source_sha256": "a676f302fca97e28f82807d8bb226efe5b8afb62147fa933f1076f4f17919f2b"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/idle/00.png",
+      "target": "workflows/lumi-pet-run/frames/idle/00.png",
+      "source_sha256": "a1a6e42d1499940dbb4d288c62b7445a528dad7d8c39f50931a04d47efaa768d"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/idle/01.png",
+      "target": "workflows/lumi-pet-run/frames/idle/01.png",
+      "source_sha256": "ae2c5ae36f1ee0f9f2002ce0a835a64ce9de38feacc8ec947c0835b8c6244213"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/idle/03.png",
+      "target": "workflows/lumi-pet-run/frames/idle/03.png",
+      "source_sha256": "8c15b41611f49ef8334eb240133902adb5207696c640bc75de22179d67f16e9e"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/idle/02.png",
+      "target": "workflows/lumi-pet-run/frames/idle/02.png",
+      "source_sha256": "c0eed2d68bbbdead1be22a6427f22794e009d0a55d511923f1d0a486fbc31e9c"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/idle/05.png",
+      "target": "workflows/lumi-pet-run/frames/idle/05.png",
+      "source_sha256": "01b662cf57df4eea2e3904a06986f09f7d975902bc4ec72add1efe073e4cf4c0"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/idle/04.png",
+      "target": "workflows/lumi-pet-run/frames/idle/04.png",
+      "source_sha256": "f7ee2171cb63f3d93adacaac86eeb4fb508245bb0691eed828d1b8fb47acefa6"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/00.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/00.png",
+      "source_sha256": "f93acbd9c95ab237786220defbbb13bfe27a601df76d7625e2aa35bd0234348e"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/01.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/01.png",
+      "source_sha256": "9bfd9b0ed7a94f57c6e25df70219f8b66c5bfe9ab4bb24ca50a7f1cad2f51b41"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/03.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/03.png",
+      "source_sha256": "bd8bd741eb484d66a94f99dfdbbd1a94a270fd50fe3a090ed1a3d27c31b205f6"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/02.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/02.png",
+      "source_sha256": "9f8299496e699a91a2b03ef8a6ea81de2298aac6f09cba3c9541afbe73bb6464"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/06.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/06.png",
+      "source_sha256": "00083411c86b96602e68a2fa91b4a56f842d41a8b43303d83544d1278b072149"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/07.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/07.png",
+      "source_sha256": "cdf3e79e271d65839f79be803e1451efb42ab7765422e4a6f8cdf8cadd30888e"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/05.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/05.png",
+      "source_sha256": "a41461b22096b0f41bcd8fe17b577c272786eea42c158ffc390d1f02cce02d6f"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-right/04.png",
+      "target": "workflows/lumi-pet-run/frames/running-right/04.png",
+      "source_sha256": "a3130c2e2e89e8d80a4e9cf4e8fcb127f13f54b8e3f579866f77303ca4c71ccc"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waving/00.png",
+      "target": "workflows/lumi-pet-run/frames/waving/00.png",
+      "source_sha256": "81534db76e1c9a53105bcda2019a97b3c89352a69d56a78c2735a3b3109e7ce7"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waving/01.png",
+      "target": "workflows/lumi-pet-run/frames/waving/01.png",
+      "source_sha256": "d7853e2964ddc3ae0ab9c65f97590e1f8f4c2642d408b4b460c0a0d97f001ce7"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waving/03.png",
+      "target": "workflows/lumi-pet-run/frames/waving/03.png",
+      "source_sha256": "85ea3b1278e7d95a597bf13085394bc41638a737a599b8df786b8b403a1e9620"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waving/02.png",
+      "target": "workflows/lumi-pet-run/frames/waving/02.png",
+      "source_sha256": "122ae12117a139f5549fc0052fa2b7f1fc872836a8732186a2aeb794b1749896"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/00.png",
+      "target": "workflows/lumi-pet-run/frames/failed/00.png",
+      "source_sha256": "98a55f8d5660b8ca48b939714033ebc3c058512a6311fc34bc834cb6f894101d"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/01.png",
+      "target": "workflows/lumi-pet-run/frames/failed/01.png",
+      "source_sha256": "20af58235692416d4d53a92f41a577ebfed985733815f5d051b2adbd426ded84"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/03.png",
+      "target": "workflows/lumi-pet-run/frames/failed/03.png",
+      "source_sha256": "8da2cf9c57939e44fa1aa3186d65ff1f969f635e91f5ee818cd29878e0c06a3b"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/02.png",
+      "target": "workflows/lumi-pet-run/frames/failed/02.png",
+      "source_sha256": "9ce1ffc52121904db96be7fa16d8d9ab2a0102f7027f9edc79dc1831b0b6c71e"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/06.png",
+      "target": "workflows/lumi-pet-run/frames/failed/06.png",
+      "source_sha256": "f5d00f01f676d2a56a683ff07e23b5b54ba5d157cb132331564f8783619f21f2"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/07.png",
+      "target": "workflows/lumi-pet-run/frames/failed/07.png",
+      "source_sha256": "4ce67fdec1b564ae7ba7c5c0ffc4f4402fadf2f65f06bc2af13763b3eaa01b79"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/05.png",
+      "target": "workflows/lumi-pet-run/frames/failed/05.png",
+      "source_sha256": "bfb64454fa6ec7729543d9c6bdcc338e22ed4aaf3125a9bfc249c6e30d568be4"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/failed/04.png",
+      "target": "workflows/lumi-pet-run/frames/failed/04.png",
+      "source_sha256": "aabb5ba0f94d8e60da8286945b65d6d12220b5745e60d43538d403110d170f37"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/jumping/00.png",
+      "target": "workflows/lumi-pet-run/frames/jumping/00.png",
+      "source_sha256": "d9685d9e26c5bb51b1b6b1da2c33f2d1bcd867826a347f3020d0e1904a3c1a43"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/jumping/01.png",
+      "target": "workflows/lumi-pet-run/frames/jumping/01.png",
+      "source_sha256": "4a8db95c888e84a04caafde061efc5b988d922d7754f5d5a712ba1edb3d313aa"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/jumping/03.png",
+      "target": "workflows/lumi-pet-run/frames/jumping/03.png",
+      "source_sha256": "82c65d63c7cfa066fed918722c3baf0c0e7f2ba9f817b857d0d1352a804a7506"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/jumping/02.png",
+      "target": "workflows/lumi-pet-run/frames/jumping/02.png",
+      "source_sha256": "5b29d7a546be589d0ac0d52eb134c774f5a152fed1a6439c42008d51e95d4fd8"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/jumping/04.png",
+      "target": "workflows/lumi-pet-run/frames/jumping/04.png",
+      "source_sha256": "e62c46a5c9814a45ef165b9eb0fa8c7a0d139e250997343d7efdd861606d26b1"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waiting/00.png",
+      "target": "workflows/lumi-pet-run/frames/waiting/00.png",
+      "source_sha256": "7ffdd688e96b6cf9c9f082ff2cfd5d606c18dcfe3d78fd510af80b1ee86bb0c4"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waiting/01.png",
+      "target": "workflows/lumi-pet-run/frames/waiting/01.png",
+      "source_sha256": "bb3869de42351ba152896f68f93d51cea4cd17d50c494cf06527f4f52aa8afaa"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waiting/03.png",
+      "target": "workflows/lumi-pet-run/frames/waiting/03.png",
+      "source_sha256": "94bbdd18fdfe7f7cc88a2c3728bda26a36d2ec49b8e7b53f8f5fc08c9dba47c1"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waiting/02.png",
+      "target": "workflows/lumi-pet-run/frames/waiting/02.png",
+      "source_sha256": "c876fe5884852f1a51d86f38267c208f9a92473189b7116e02ec6d2a7e6b58f5"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waiting/05.png",
+      "target": "workflows/lumi-pet-run/frames/waiting/05.png",
+      "source_sha256": "5b17b4e1be9739cc0bc5c68016be66bb5f47fa64d54006f0028a8ceb2ce650a7"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/waiting/04.png",
+      "target": "workflows/lumi-pet-run/frames/waiting/04.png",
+      "source_sha256": "2cdc011ceaf004e2605309e7827a58e080aedcfcbe2bef852a1e43d3d44e0b25"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/review/00.png",
+      "target": "workflows/lumi-pet-run/frames/review/00.png",
+      "source_sha256": "e51a0e8f1545910e5239092ff4f5bbf82f951951c29970b65bb072ba49824641"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/review/01.png",
+      "target": "workflows/lumi-pet-run/frames/review/01.png",
+      "source_sha256": "42f0c32914ddedefb0dca7d5750bc515635fe889351fc935f4e5179c85d6f7fb"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/review/03.png",
+      "target": "workflows/lumi-pet-run/frames/review/03.png",
+      "source_sha256": "ff8b3f121af332e33540701fe0c93c90fffb280b7ea2c98412df6bc39eea3d8f"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/review/02.png",
+      "target": "workflows/lumi-pet-run/frames/review/02.png",
+      "source_sha256": "74efe7858720b4d26b81baa9207aef9516a22493d1f753f283130ef7e6de84b6"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/review/05.png",
+      "target": "workflows/lumi-pet-run/frames/review/05.png",
+      "source_sha256": "71a22b697e9da23901c0f6917a25db778886fdcf8cbad36a1d07546343f7b27d"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/review/04.png",
+      "target": "workflows/lumi-pet-run/frames/review/04.png",
+      "source_sha256": "13972f78d84a3d9d0fab427a352fd76ab854a3e88b676752a5d9b168eee70db0"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/00.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/00.png",
+      "source_sha256": "d12695387444d4e1149b5fe9292541c447388f88a031ba86547a78c69b41a43e"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/01.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/01.png",
+      "source_sha256": "6c16af9f8485754471189b4d0995f6421741c6810d40a58cbf62a782da4e05ae"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/03.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/03.png",
+      "source_sha256": "e77fe10a07e5b767eb4d3bad6526a6f12762f0f6f2280af0b0ef6490961097e0"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/02.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/02.png",
+      "source_sha256": "669c6563e912c697a148a201e4eaadf08628c32cde6793e5f50bcc663261a733"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/06.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/06.png",
+      "source_sha256": "c2c933272afc2928f42710507b728c9ff577856d207723af077dba7f08a43af7"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/07.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/07.png",
+      "source_sha256": "3f1a535b657ea89843c746bb4bd75e1b25b000e2f2dc3354bde5dc63ae80fa22"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/05.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/05.png",
+      "source_sha256": "aeb88f8c208fc7795462613f3599d5bb1a4b53c4cf471edf6f37f1b0011c0ea4"
+    },
+    {
+      "source": "work/lumi-pet-run/frames/running-left/04.png",
+      "target": "workflows/lumi-pet-run/frames/running-left/04.png",
+      "source_sha256": "a6a8efd1268248eb25407a736cd37dc6742e730113e780e9f55df5bc9f5d6d65"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/waving.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/waving.png",
+      "source_sha256": "5ccc2ce66b4677a2891ddc78b2e0c1457c8dd4c48ee03135135bf334ee782002"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/look-cardinals.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/look-cardinals.png",
+      "source_sha256": "5ccc2ce66b4677a2891ddc78b2e0c1457c8dd4c48ee03135135bf334ee782002"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/failed.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/failed.png",
+      "source_sha256": "6d67d00f341f39f1535fd37776b19b366e4e78ee38f7ef002d368ecb1d765c40"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/review.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/review.png",
+      "source_sha256": "8530deda4e33f28621ebd871739ad0414e0721bdd45eb363cc13b5305aa35545"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/idle.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/idle.png",
+      "source_sha256": "8530deda4e33f28621ebd871739ad0414e0721bdd45eb363cc13b5305aa35545"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/look-row-9.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/look-row-9.png",
+      "source_sha256": "6d67d00f341f39f1535fd37776b19b366e4e78ee38f7ef002d368ecb1d765c40"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/running-right.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/running-right.png",
+      "source_sha256": "6d67d00f341f39f1535fd37776b19b366e4e78ee38f7ef002d368ecb1d765c40"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/look-row-10.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/look-row-10.png",
+      "source_sha256": "6d67d00f341f39f1535fd37776b19b366e4e78ee38f7ef002d368ecb1d765c40"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/waiting.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/waiting.png",
+      "source_sha256": "8530deda4e33f28621ebd871739ad0414e0721bdd45eb363cc13b5305aa35545"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/jumping.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/jumping.png",
+      "source_sha256": "dd6f193a159ae50013b1c4368d9a02ab29bdffaa48fa978a9628801cfd0a0a29"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/running.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/running.png",
+      "source_sha256": "8530deda4e33f28621ebd871739ad0414e0721bdd45eb363cc13b5305aa35545"
+    },
+    {
+      "source": "work/lumi-pet-run/references/layout-guides/running-left.png",
+      "target": "workflows/lumi-pet-run/references/layout-guides/running-left.png",
+      "source_sha256": "6d67d00f341f39f1535fd37776b19b366e4e78ee38f7ef002d368ecb1d765c40"
+    },
+    {
+      "source": "work/pet-inspect/pet-content-24ccd7c1fe90.js",
+      "target": "reference/host/pet-content-24ccd7c1fe90.js",
+      "source_sha256": "8be1f775674d9bbeb76fd7967e026ed0a94b2212e2209149a6aaa2f97b30541f"
+    },
+    {
+      "source": "work/pet-inspect/codex-pet-assets-5f01c10f2955.js",
+      "target": "reference/host/codex-pet-assets-5f01c10f2955.js",
+      "source_sha256": "b34d24f2dba43d160cbee16104fa045d64dfd1beef9069893ef0cf503b0a6958"
+    },
+    {
+      "source": "work/pet-inspect/pets-settings-route-dff74d2e793d.js",
+      "target": "reference/host/pets-settings-route-dff74d2e793d.js",
+      "source_sha256": "7446636483fb887b4d1e46210949ab32e82ce4140c266d3033f9d5dc7a302c4f"
+    },
+    {
+      "source": "work/pet-inspect/avatar-mascot-button-1aa084139145.js",
+      "target": "reference/host/avatar-mascot-button-1aa084139145.js",
+      "source_sha256": "e593dd7df48b4bed48de08cfbc15908e4f5e038986cc60b71ebd3ada174071a8"
+    },
+    {
+      "source": "work/pet-inspect/pet-install-state-1834ae8827e4.js",
+      "target": "reference/host/pet-install-state-1834ae8827e4.js",
+      "source_sha256": "4f07ebc73723a2f0a51f51cc04e439fb6569968d8c8316910ee6718f77162e81"
+    },
+    {
+      "source": "work/pet-inspect/pet-install-modal-host.js",
+      "target": "reference/host/pet-install-modal-host.js",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "work/pet-inspect/avatar-overlay-native-page-caa507f161db.js",
+      "target": "reference/host/avatar-overlay-native-page-caa507f161db.js",
+      "source_sha256": "a5e3b35f78d9bb75ccedcc39b68cc93682299f5ac6c5b6ca18a55d766ca3b261"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/lumi-preview.png",
+      "target": "assets/pets/lumi-actions-v3/lumi-preview.png",
+      "source_sha256": "4af0db9abd721694664869766c2f8c9b515b0aaf874c5bd062655169b44a3740"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/转圈光带.webp",
+      "target": "assets/pets/lumi-actions-v3/转圈光带.webp",
+      "source_sha256": "0265df94e0e5dde1ea03b59fd2cede61861d5e0dee20505de9b2f05cfe14ca14"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/jumping.gif",
+      "target": "assets/pets/lumi-actions-v3/jumping.gif",
+      "source_sha256": "6531f03805a53991e65af98e4ead355b63483c2aec1c589d3e74abec3eafafdf"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/验证结果.json",
+      "target": "assets/pets/lumi-actions-v3/验证结果.json",
+      "source_sha256": "a2b7c8a6fc8b302394c4fa0e99a590b6b5e0b79e462a5bb6974906b4b0a8e6bb"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/制作提示词.md",
+      "target": "assets/pets/lumi-actions-v3/制作提示词.md",
+      "source_sha256": "96079674d32ff5e33b370d51d1f08c74d32ba1b7feca498344a58e76c878b414"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/spritesheet-before-update.webp",
+      "target": "assets/pets/lumi-actions-v3/spritesheet-before-update.webp",
+      "source_sha256": "9e1ca8638e1c16a880950b088ecc2651cb075947cd152d5ab352fbf0b5580c7d"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/waving.gif",
+      "target": "assets/pets/lumi-actions-v3/waving.gif",
+      "source_sha256": "4420129657cce848637eb2a2f62b49f5395b70f0dae127303e1302f10e2875fd"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/spritesheet.webp",
+      "target": "assets/pets/lumi-actions-v3/spritesheet.webp",
+      "source_sha256": "cbc4f4d44ce3c4e1036c0b9fa354b20a7e59591b37e7957f9691677f1d89154d"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/animation-sheet-preview.png",
+      "target": "assets/pets/lumi-actions-v3/animation-sheet-preview.png",
+      "source_sha256": "339c9e17c6cdd7f4a33293bd81f29d7d80aaa123bcb6f9646d28cd790f767bc8"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/pet.json",
+      "target": "assets/pets/lumi-actions-v3/pet.json",
+      "source_sha256": "921f5edbfea55d7e3558b8ddd56ad424d806dc59f658c46962822daa407d43bf"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/说明.md",
+      "target": "assets/pets/lumi-actions-v3/说明.md",
+      "source_sha256": "5a28cefb8e2fa82a259d228f087c1a5ab5fbee592a6111b215bdf7c4269d0cae"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v3/idle.gif",
+      "target": "assets/pets/lumi-actions-v3/idle.gif",
+      "source_sha256": "728e0c0a25d4741af50fe1d7c8f621e88e832e42afe1fee36cd459e917e0f453"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/lumi-preview.png",
+      "target": "assets/pets/lumi-actions-v2/lumi-preview.png",
+      "source_sha256": "4af0db9abd721694664869766c2f8c9b515b0aaf874c5bd062655169b44a3740"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/jumping.gif",
+      "target": "assets/pets/lumi-actions-v2/jumping.gif",
+      "source_sha256": "a5e42ba70f1d9368fe916315007d90755debfecc12a8aeadcd7c3716b92979fc"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/spritesheet-before-update.webp",
+      "target": "assets/pets/lumi-actions-v2/spritesheet-before-update.webp",
+      "source_sha256": "9e1ca8638e1c16a880950b088ecc2651cb075947cd152d5ab352fbf0b5580c7d"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/waving.gif",
+      "target": "assets/pets/lumi-actions-v2/waving.gif",
+      "source_sha256": "4420129657cce848637eb2a2f62b49f5395b70f0dae127303e1302f10e2875fd"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/spritesheet.webp",
+      "target": "assets/pets/lumi-actions-v2/spritesheet.webp",
+      "source_sha256": "a2520acb32a134a237e35823335462aeec57820d117d346349d1adae9f5cac93"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/animation-sheet-preview.png",
+      "target": "assets/pets/lumi-actions-v2/animation-sheet-preview.png",
+      "source_sha256": "7bfaf572b71f32859d99f3686875d6708e5cc96737c0dd6f035ff3634689ef23"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/pet.json",
+      "target": "assets/pets/lumi-actions-v2/pet.json",
+      "source_sha256": "921f5edbfea55d7e3558b8ddd56ad424d806dc59f658c46962822daa407d43bf"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/说明.md",
+      "target": "assets/pets/lumi-actions-v2/说明.md",
+      "source_sha256": "b52177b9bcb1d49b9e8ac89224ed8386d5d9481de8d7e84083a1d01baaea90b4"
+    },
+    {
+      "source": "outputs/pets/lumi-actions-v2/idle.gif",
+      "target": "assets/pets/lumi-actions-v2/idle.gif",
+      "source_sha256": "728e0c0a25d4741af50fe1d7c8f621e88e832e42afe1fee36cd459e917e0f453"
+    },
+    {
+      "source": "outputs/pets/lumi/lumi-preview.png",
+      "target": "assets/pets/lumi/lumi-preview.png",
+      "source_sha256": "b8e1783e9e6eea938423a2ca1c851543e079e93f65f44f9b0b211084ba7e9b3c"
+    },
+    {
+      "source": "outputs/pets/lumi/spritesheet.webp",
+      "target": "assets/pets/lumi/spritesheet.webp",
+      "source_sha256": "9e1ca8638e1c16a880950b088ecc2651cb075947cd152d5ab352fbf0b5580c7d"
+    },
+    {
+      "source": "outputs/pets/lumi/animation-sheet-preview.png",
+      "target": "assets/pets/lumi/animation-sheet-preview.png",
+      "source_sha256": "8c594d42c4d905a95973afecf7171156c3b1ca21c49bddc1a2c5c57572442c20"
+    },
+    {
+      "source": "outputs/pets/lumi/pet.json",
+      "target": "assets/pets/lumi/pet.json",
+      "source_sha256": "921f5edbfea55d7e3558b8ddd56ad424d806dc59f658c46962822daa407d43bf"
+    },
+    {
+      "source": "outputs/pets/lumi/安装露米.command",
+      "target": "assets/pets/lumi/安装露米.command",
+      "source_sha256": "32f87ebebe48fcd594b89007f2e410a1fe98eefa21b6301e89fc774755970ec4"
+    },
+    {
+      "source": "outputs/designs/chatgpt-pet/Lumi · ChatGPT Pet.html",
+      "target": "designs/chatgpt-pet/Lumi · ChatGPT Pet.html",
+      "source_sha256": "d9fa546903841ebba0053bd1eb001040a6c3a824568af10e7fa1a3ebe8788eb9"
+    },
+    {
+      "source": "outputs/designs/chatgpt-pet/_d_meta.json",
+      "target": "designs/chatgpt-pet/_d_meta.json",
+      "source_sha256": "4ce13767c5afb8155ae0097389959459e0ed8901cc5c65d6703c5ed0056ed544"
+    },
+    {
+      "source": "outputs/designs/chatgpt-pet/imgs/lumi-character.png",
+      "target": "designs/chatgpt-pet/imgs/lumi-character.png",
+      "source_sha256": "8fe0981c021f7fbc2391ce586ba98a3d59a19fc045822fddf8b0efb4ad93b705"
+    },
+    {
+      "source": "outputs/designs/chatgpt-pet/prompts/01-character-lumi.md",
+      "target": "designs/chatgpt-pet/prompts/01-character-lumi.md",
+      "source_sha256": "d00af74c3f671a571a166c4a4b488e9f6dbfa6b918ca8a87e51e999e8b9993c1"
+    },
+    {
+      "source": "pet-install-modal-host-57195bddcf1a.js",
+      "target": "reference/host/pet-install-modal-host-57195bddcf1a.js",
+      "source_sha256": "275cd2f1c9939658c9c8a80ee439830ea79246a6327d83321b58f50fe62424a6"
+    }
+  ]
+}

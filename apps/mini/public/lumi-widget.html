@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumi · ChatGPT Pet</title>
+  <style>
+    :root{font-family:-apple-system,"SF Pro Text","PingFang SC",sans-serif;color:#294a3a;--mint:#83d1a9}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:transparent}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #70b891;outline-offset:3px}
+    .card{width:min(100%,330px);min-height:278px;margin:auto;border:1px solid #dce9df;border-radius:20px;background:radial-gradient(circle at 78% 49%,#dff7e9 0,transparent 43%),#f9fcf7;box-shadow:0 15px 32px #1c4e3020;overflow:hidden;position:relative}
+    .top{height:39px;display:flex;justify-content:space-between;align-items:center;padding:0 15px;border-bottom:1px solid #e5efe6}.name{font-family:Georgia,"Songti SC",serif;font-size:17px;color:#315c43}.name small{font-family:inherit;font-size:10px;color:#94a99a}.status{display:flex;align-items:center;gap:6px;color:#81a58c;font-size:10px}.status::before{content:"";width:6px;height:6px;border-radius:50%;background:#78cf99}
+    .scene{height:176px;position:relative;overflow:hidden}.scene canvas{position:absolute;right:18px;bottom:-5px;width:144px;height:156px;filter:drop-shadow(0 8px 12px #4ca97755)}.bubble{position:absolute;left:16px;top:36px;width:164px;min-height:72px;border:1px solid #dfebe0;border-radius:13px 13px 4px 13px;background:#fff;padding:10px 11px;box-shadow:0 7px 18px #2b704415;color:#527362;font-size:11px;line-height:1.6;word-break:break-word}.bubble::before{content:"LUMI · 陪伴中";display:block;font-size:9px;letter-spacing:.08em;font-weight:700;color:#7ba98b;margin-bottom:3px}.hint{position:absolute;left:17px;bottom:14px;color:#a0b2a6;font-size:9px}
+    .actions{border-top:1px solid #e4eee5;padding:10px 13px;display:flex;align-items:center;gap:6px}.actions button{border-radius:9px;min-height:30px;font-size:10px;padding:5px 9px;border:1px solid #d7e8db;background:#fff;color:#52745e;white-space:nowrap}.actions button:hover{background:#eaf7ec}.actions .primary{background:#2c6249;border-color:#2c6249;color:#fff}.actions .primary:hover{background:#3a7858}.actions .close{margin-left:auto;width:30px;padding:5px;font-size:15px;line-height:1;color:#8ba997}
+    .card.focus .scene canvas,.card.focus .bubble{display:none}.card.focus .scene::before{content:"✧";position:absolute;left:50%;top:29px;transform:translateX(-50%);width:73px;height:73px;border-radius:50%;display:grid;place-items:center;background:#dff7e8;color:#59a67a;font-size:38px;box-shadow:0 8px 25px #74bd9444;animation:hover 4s ease-in-out infinite}.card.focus .hint{left:0;right:0;text-align:center;bottom:25px;font-size:11px;color:#649278}.card.focus .bubble{display:none}.card.comfort{background:radial-gradient(circle at 78% 49%,#f4ecdc 0,transparent 43%),#fcfaf5}.card.comfort .status::before{background:#ddb48c}.card.comfort .bubble::before{content:"LUMI · 安慰中"}
+    .toast{position:absolute;left:50%;bottom:52px;transform:translate(-50%,7px);opacity:0;background:#2e6048;color:#fff;padding:7px 10px;border-radius:100px;font-size:10px;transition:.2s;pointer-events:none;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(prefers-reduced-motion:reduce){.scene canvas,.card.focus .scene::before{animation:none}}
+    @keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  </style>
+</head>
+<body>
+  <main class="card" id="card" aria-label="Lumi ChatGPT 宠物">
+    <header class="top"><div class="name">Lumi <small>· 露米</small></div><div class="status">在你身边</div></header>
+    <div class="scene"><div class="bubble" id="message">我在这里。想从哪个念头开始？</div><canvas id="pet" width="192" height="208" role="img" aria-label="露米 Lumi 动画精灵"></canvas><div class="hint" id="hint">温柔陪伴，不打断你</div></div>
+    <div class="actions"><button id="pin" class="primary" type="button">悬浮陪伴</button><button id="focus" type="button">专注</button><button id="idea" type="button">给点灵感</button><button id="close" class="close" type="button" aria-label="关闭 Lumi">×</button></div>
+    <div class="toast" id="toast" role="status"></div>
+  </main>
+  <script>
+    const card=document.getElementById('card');const message=document.getElementById('message');const hint=document.getElementById('hint');const focusButton=document.getElementById('focus');const toast=document.getElementById('toast');
+    let current={mode:'companion',message:'我在这里。想从哪个念头开始？',action:'idle'};let toastTimer;let rpcId=0;const pending=new Map();
+    const canvas=document.getElementById('pet'),ctx=canvas.getContext('2d'),sprite=new Image();
+    const states={'idle':[0,6],'running-right':[1,8],'running-left':[2,8],'waving':[3,4],'jumping':[4,5],'failed':[5,8],'waiting':[6,6],'running':[7,6],'review':[8,6]};
+    const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+    let action='idle',baseAction='idle',frame=0,lastFrame=0,once=false,ready=false,animationId;
+    function play(name,oneShot=false){action=Object.hasOwn(states,name)?name:'idle';frame=0;lastFrame=0;once=oneShot;if(ready)draw()}
+    function draw(){const [row]=states[action];ctx.clearRect(0,0,192,208);ctx.drawImage(sprite,frame*192,row*208,192,208,0,0,192,208)}
+    function animate(time){if(ready&&!document.hidden&&current.mode!=='focus'){if(!reducedMotion.matches&&time-lastFrame>=120){lastFrame=time;frame++;if(frame>=states[action][1]){if(once){action=baseAction;once=false}frame=0}}draw()}animationId=requestAnimationFrame(animate)}
+    sprite.addEventListener('load',()=>{ready=true;play('waving',true);animationId=requestAnimationFrame(animate)});
+    sprite.addEventListener('error',()=>notify('动画素材加载失败'));
+    sprite.src='__LUMI_SPRITESHEET__';
+    canvas.addEventListener('pointerenter',()=>play('jumping',true));
+    canvas.addEventListener('click',()=>play('waving',true));
+    window.addEventListener('pagehide',()=>cancelAnimationFrame(animationId));
+    function notify(text){toast.textContent=text;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2300)}
+    function render(next){if(!next||typeof next!=='object')return;const mode=['companion','focus','comfort'].includes(next.mode)?next.mode:'companion';const saying=typeof next.message==='string'&&next.message.trim()?next.message.slice(0,100):current.message;current={mode,message:saying,action:Object.hasOwn(states,next.action)?next.action:'idle'};baseAction=current.action;play(baseAction); card.classList.toggle('focus',mode==='focus');card.classList.toggle('comfort',mode==='comfort');message.textContent=saying;hint.textContent=mode==='focus'?'我在角落，安静等你':'温柔陪伴，不打断你';focusButton.textContent=mode==='focus'?'唤回':'专注';window.openai?.setWidgetState?.({modelContent:`Lumi is in ${mode} mode.`,privateContent:current})}
+    function rpcRequest(method,params){return new Promise((resolve,reject)=>{const id=++rpcId;pending.set(id,{resolve,reject});window.parent.postMessage({jsonrpc:'2.0',id,method,params},'*')})}
+    function rpcNotify(method,params){window.parent.postMessage({jsonrpc:'2.0',method,params},'*')}
+    window.addEventListener('message',event=>{if(event.source!==window.parent)return;const data=event.data;if(!data||data.jsonrpc!=='2.0')return;if(typeof data.id==='number'){const p=pending.get(data.id);if(!p)return;pending.delete(data.id);data.error?p.reject(data.error):p.resolve(data.result);return}if(data.method==='ui/notifications/tool-result')render(data.params?.structuredContent);if(data.method==='ui/notifications/tool-input'&&data.params)render(data.params)}, {passive:true});
+    if(window.parent!==window){rpcRequest('ui/initialize',{appInfo:{name:'lumi-pet',version:'0.2.0'},appCapabilities:{},protocolVersion:'2026-01-26'}).then(()=>rpcNotify('ui/notifications/initialized',{})).catch(()=>{});}
+    if(window.openai?.widgetState?.privateContent)render(window.openai.widgetState.privateContent);
+    if(window.openai?.toolOutput)render(window.openai.toolOutput);
+    document.getElementById('pin').addEventListener('click',async()=>{if(window.openai?.requestDisplayMode){try{await window.openai.requestDisplayMode({mode:'pip'});notify('Lumi 已在画中画陪伴')}catch{notify('当前窗口未提供画中画')}}else notify('请在 ChatGPT 中打开 Lumi')});
+    focusButton.addEventListener('click',()=>{render({mode:current.mode==='focus'?'companion':'focus',message:current.message});notify(current.mode==='focus'?'已进入专注模式':'Lumi 回来了')});
+    document.getElementById('idea').addEventListener('click',async()=>{if(window.openai?.sendFollowUpMessage){await window.openai.sendFollowUpMessage({prompt:'Lumi，请结合我们当前的对话，给我一个温柔而具体的下一步建议。'});}else notify('请在 ChatGPT 中使用此功能')});
+    document.getElementById('close').addEventListener('click',()=>{if(window.openai?.requestClose)window.openai.requestClose();else notify('请在 ChatGPT 中关闭')});
+  </script>
+</body>
+</html>

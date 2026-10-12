@@ -1,0 +1,150 @@
+{
+  "reviewer": "independent visual QA worker",
+  "normal_size_review": "cardinals clear; ordered loop coherent; no background or frame",
+  "directions": [
+    {
+      "direction": "000",
+      "verdict": "pass",
+      "expected": "up",
+      "observed": "up",
+      "horizontal_evidence": "centered",
+      "vertical_evidence": "raised",
+      "reason": "Centered face and eyes lift."
+    },
+    {
+      "direction": "022.5",
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "up, weak right",
+      "horizontal_evidence": "slight screen-right offset",
+      "vertical_evidence": "clearly raised",
+      "reason": "Right cue is subtle at normal size."
+    },
+    {
+      "direction": "045",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "horizontal_evidence": "face and eyes shift screen-right",
+      "vertical_evidence": "pupils raised",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "067.5",
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "horizontal_evidence": "strong screen-right head turn",
+      "vertical_evidence": "gaze remains raised",
+      "reason": "Smooth step toward right cardinal."
+    },
+    {
+      "direction": "090",
+      "verdict": "pass",
+      "expected": "right",
+      "observed": "right",
+      "horizontal_evidence": "face and pupils point screen-right",
+      "vertical_evidence": "roughly level",
+      "reason": "Clear right cardinal."
+    },
+    {
+      "direction": "112.5",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "horizontal_evidence": "rightward face turn",
+      "vertical_evidence": "eyes and chin lower",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "135",
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "horizontal_evidence": "right-oriented head and pupils",
+      "vertical_evidence": "lowered eyes",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "157.5",
+      "verdict": "warning",
+      "expected": "down-right",
+      "observed": "down, weak right",
+      "horizontal_evidence": "slight screen-right offset",
+      "vertical_evidence": "clearly downcast",
+      "reason": "Right cue is subtle near down cardinal."
+    },
+    {
+      "direction": "180",
+      "verdict": "pass",
+      "expected": "down",
+      "observed": "down",
+      "horizontal_evidence": "centered",
+      "vertical_evidence": "bowed face and lowered eyes",
+      "reason": "Clear down cardinal."
+    },
+    {
+      "direction": "202.5",
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "down, weak left",
+      "horizontal_evidence": "slight screen-left offset",
+      "vertical_evidence": "clearly downcast",
+      "reason": "Left cue is subtle near down cardinal."
+    },
+    {
+      "direction": "225",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "horizontal_evidence": "face and eyes shift screen-left",
+      "vertical_evidence": "gaze remains lowered",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "247.5",
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "horizontal_evidence": "pronounced screen-left head turn",
+      "vertical_evidence": "lowered eyes",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "270",
+      "verdict": "pass",
+      "expected": "left",
+      "observed": "left",
+      "horizontal_evidence": "face and pupils point screen-left",
+      "vertical_evidence": "roughly level",
+      "reason": "Clear left cardinal."
+    },
+    {
+      "direction": "292.5",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "horizontal_evidence": "leftward face turn",
+      "vertical_evidence": "eyes lifted",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "315",
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "horizontal_evidence": "visibly screen-left face",
+      "vertical_evidence": "raised eyes",
+      "reason": "Both axes are readable."
+    },
+    {
+      "direction": "337.5",
+      "verdict": "warning",
+      "expected": "up-left",
+      "observed": "up, weak left",
+      "horizontal_evidence": "slight screen-left offset",
+      "vertical_evidence": "clearly raised",
+      "reason": "Left cue is subtle near up cardinal."
+    }
+  ]
+}

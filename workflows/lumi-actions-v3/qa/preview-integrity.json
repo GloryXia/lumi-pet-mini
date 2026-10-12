@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "visible_pixels_and_alpha_match_final_atlas": true,
+  "frames": [
+    {
+      "frame": 0,
+      "semi_transparent_pixels": 13965
+    },
+    {
+      "frame": 1,
+      "semi_transparent_pixels": 14864
+    },
+    {
+      "frame": 2,
+      "semi_transparent_pixels": 15133
+    },
+    {
+      "frame": 3,
+      "semi_transparent_pixels": 15227
+    },
+    {
+      "frame": 4,
+      "semi_transparent_pixels": 14318
+    }
+  ]
+}

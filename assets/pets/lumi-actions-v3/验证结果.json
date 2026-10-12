@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "visual_qa": "pass",
+  "qa_note": "Spin direction/lift and spiral glow readable; identity/scale stable; no visible box/clipping/position jumps. User-authorized glow retained; native RGBA alpha preserved.",
+  "sha256": "cbc4f4d44ce3c4e1036c0b9fa354b20a7e59591b37e7957f9691677f1d89154d",
+  "id": "lumi",
+  "spriteVersionNumber": 2
+}

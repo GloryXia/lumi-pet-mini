@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "frames": [
+        "workflows/lumi-actions-v2/frames/idle/00.png",
+        "workflows/lumi-actions-v2/frames/idle/01.png",
+        "workflows/lumi-actions-v2/frames/idle/02.png",
+        "workflows/lumi-actions-v2/frames/idle/03.png",
+        "workflows/lumi-actions-v2/frames/idle/04.png",
+        "workflows/lumi-actions-v2/frames/idle/05.png"
+      ],
+      "method": "components"
+    },
+    {
+      "state": "waving",
+      "frames": [
+        "workflows/lumi-actions-v2/frames/waving/00.png",
+        "workflows/lumi-actions-v2/frames/waving/01.png",
+        "workflows/lumi-actions-v2/frames/waving/02.png",
+        "workflows/lumi-actions-v2/frames/waving/03.png"
+      ],
+      "method": "components"
+    },
+    {
+      "state": "jumping",
+      "frames": [
+        "workflows/lumi-actions-v2/frames/jumping/00.png",
+        "workflows/lumi-actions-v2/frames/jumping/01.png",
+        "workflows/lumi-actions-v2/frames/jumping/02.png",
+        "workflows/lumi-actions-v2/frames/jumping/03.png",
+        "workflows/lumi-actions-v2/frames/jumping/04.png"
+      ],
+      "method": "components"
+    }
+  ]
+}
