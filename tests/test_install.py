@@ -17,7 +17,7 @@ class InstallationTests(unittest.TestCase):
             install_pet.install(dest)
             self.assertEqual((dest / 'spritesheet.webp').read_bytes(), (PACKAGE / 'spritesheet.webp').read_bytes())
             (dest / 'user-note.txt').write_text('keep me')
-            report = install_pet.install(dest)
+            report = install_pet.install(dest, force=True)
             self.assertEqual((Path(report['backup']) / 'user-note.txt').read_text(), 'keep me')
 
     def test_failed_replacement_restores_original_directory(self):
@@ -34,7 +34,7 @@ class InstallationTests(unittest.TestCase):
 
             with patch.object(install_pet.os, 'replace', side_effect=fail_staged):
                 with self.assertRaises(OSError):
-                    install_pet.install(dest)
+                    install_pet.install(dest, force=True)
             self.assertEqual((dest / 'user-note.txt').read_text(), 'rollback')
             self.assertEqual(validate(dest)['ok'], True)
 

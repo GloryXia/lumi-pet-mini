@@ -1,87 +1,116 @@
-# 露米 Lumi · Pet / Mini
+# 露米 Lumi · Codex App 原生 Pet / Mini 项目
 
-将露米的原生宠物素材、动画制作流程、mini 陪伴应用和历史设计整合到一个独立 Git 项目。项目包含可在本地运行的 Node 服务和浏览器页面，以及 MCP 工具接口。
+这个项目维护能够安装到 Codex App **Settings → Mini & Pets → My pets** 的原生自定义宠物包。安装后选择 **露米 Lumi · 项目版**，由现有 App 的 Mini 浮窗展示并驱动动画。
 
-## 启动
+主入口是 `lumi.py`，网页/MCP 组件已经收纳到 `legacy/`，不参与原生安装。
 
-需要 Node.js 22+。Python 3.10+ 和 Pillow 用于素材处理、校验和安装。
+## 安装到你截图中的列表
+
+需要 Python 3.10+ 和 Pillow；原生接入已在本机 `com.openai.codex` 版本 `26.1007.30912` 的加载器上检查。
 
 ```sh
-npm ci
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
-npm start
+python3 lumi.py doctor
+python3 lumi.py install
 ```
 
-浏览器打开 <http://127.0.0.1:8787/preview>。页面加载最新 v3 动画，默认挥手后待机；悬停精灵会转圈跳，点击精灵会挥手。专注按钮切换安静模式。
+也可以双击根目录 **安装到Codex.command**。它优先使用项目的 Python 虚拟环境。
 
-MCP 地址为 `http://127.0.0.1:8787/mcp`。`show_lumi` 支持：
+安装之后：
 
-- `mode`：`companion`、`focus`、`comfort`。
-- `message`：最多 100 个字符。
-- `action`：`idle`、`running-right`、`running-left`、`waving`、`jumping`、`failed`、`waiting`、`running`、`review`。
+1. 打开 **Settings → Mini & Pets**。
+2. 点击 **My pets** 右侧的刷新图标。
+3. 选择 **露米 Lumi · 项目版**。原来的 **露米 Lumi** 会保留。
+4. 用 **Show Mini** 或 **Option+Space** 显示/聚焦原生 Mini；已有 Mini 可继续使用。
 
-画中画、对话建议和关闭卡片调用宿主提供的能力。本地预览能检查动画和模式切换；完整宿主交互需要兼容的 MCP App 宿主。本次整合没有创建公网部署或注册云端应用，也未进行云端宿主验证。
+安装目标默认为 `${CODEX_HOME:-~/.codex}/pets/lumi-project-<版本指纹>`。版本指纹来自精灵图 SHA-256，新素材会创建新版本条目；相同素材重复安装会直接返回已安装。
 
-可复制 `.env.example` 为 `.env` 修改监听地址与端口。默认只监听本机。
+本项目安装器只写入自定义宠物目录。刷新和选择通过宿主设置完成；安装器不会替用户更改宿主的账户选择、缓存或应用二进制。
+
+## Mini 与 Pet 的关系
+
+| 部分 | 负责方 |
+| --- | --- |
+| 角色素材、9 类动作、16 个视线方向 | 本项目 |
+| 原生包构建、安装、验证、导出、恢复 | 本项目 |
+| 桌面浮窗、Quick Chat、语音、活动列表、状态驱动 | Codex App 宿主 |
+| Mini 的无宠物模式、拖拽、大小、快捷键 | Codex App 宿主设置 |
+
+这是接入现有 App 的原生宠物扩展工程。Mini 的宿主功能直接复用 App；本项目没有实现另一套聊天窗口。官方操作说明见 [Pets](https://learn.chatgpt.com/docs/pets)，本机包格式与版本检查见 [native/README.md](native/README.md)。
+
+## 开发与发布
+
+```sh
+# 校验当前素材与已有视觉审核
+python3 tools/validate_pet.py
+
+# 从 v2 图集和当前跳跃帧重新合成 v3
+python3 workflows/lumi-actions-v3/compose_package.py
+
+# 同步并验证原生包
+python3 tools/build_native.py
+
+# 导出可搬运的原生宠物 ZIP 包
+python3 lumi.py export
+
+# 查看宿主和安装状态
+python3 lumi.py doctor
+python3 lumi.py status
+```
+
+当前图集是 1536 × 2288 RGBA WebP，包含 9 类动作和 16 个视线方向。视觉素材沿用原有 v3 成品。修改图集后应重新完成视觉 QA，更新审核记录，再构建原生包；校验会拒绝未经审核的图集。
+
+导出的 ZIP 包位于 `dist/`，含版本目录与 `pet.json`、`spritesheet.webp`。ZIP 是搬运包，不能假设宿主设置支持直接导入 ZIP：解压到目标机器 `CODEX_HOME/pets`，或在该机器运行本项目安装器。
+
+## 备份、回退与卸载
+
+```sh
+# 只查看将要安装的位置
+python3 lumi.py install --dry-run
+
+# 指定另一套 Codex 用户目录
+python3 lumi.py install --pets-root /path/to/codex/pets
+
+# 重新部署当前版本，保留旧目录完整备份
+python3 lumi.py install --force
+
+# 将当前项目版本移到可恢复的备份目录
+python3 lumi.py uninstall
+
+# 用命令输出中的备份路径恢复
+python3 lumi.py restore /path/to/pets/.lumi-backups/BACKUP_NAME
+```
+
+备份保存在目标宠物目录的 `.lumi-backups/`，带独立恢复记录和文件指纹。恢复会核验备份完整性。安装与卸载都只处理当前项目版本，保留之前的 `lumi` 以及其他版本。
+
+宿主可能缓存或迁移已选宠物；如果选择后仍显示旧素材，请刷新并确认选中的是本次安装的项目版本。项目不操作宿主的云端迁移映射。
 
 ## 目录
 
 ```text
-apps/mini/                    mini 应用：Node / MCP 服务与页面
-assets/pets/lumi-actions-v3/   当前成品：pet.json、精灵图、预览、回退素材
-assets/pets/lumi-actions-v2/   上一版素材，供合成与保留性检查
-assets/pets/lumi/              初版成品与历史安装入口
-workflows/lumi-actions-v3/    当前切帧、合成脚本、源图、动作帧与 QA
-workflows/lumi-actions-v2/    上一版制作记录
-workflows/lumi-pet-run/       初版制作记录，含 16 个视线方向
-tools/                        可移植校验与原生安装工具
-reference/host/               原宿主的检查材料，非本项目运行代码
+lumi.py                       原生部署与管理 CLI
+安装到Codex.command            macOS 安装入口
+native/lumi-project/          可安装原生包
+native/project.json           项目与宿主配置
+assets/pets/                  初版、v2、v3 成品与历史预览
+workflows/                    源图、提示词、切帧、合成、历史 QA
+tools/                       构建、校验、安装与恢复工具
+tests/                       原生包与部署生命周期测试
+docs/                        迁移记录和原生接入说明
+reference/host/              历史宿主检查材料
+legacy/chatgpt-mcp-widget/    之前的网页/MCP 实验，独立运行
 designs/                     历史设计稿
-tests/                       服务接口与安装回退测试
-docs/                        迁移清单与验证说明
 ```
 
-所有依赖统一在项目根目录安装和锁定；`apps/mini` 是 npm workspace。历史源图、提示词、动作帧和 QA 都纳入 Git。`node_modules`、Python 虚拟环境、个人环境变量不纳入 Git。
-
-## 素材制作与校验
+## 检查
 
 ```sh
-npm run pet:validate
-npm run pet:build
-npm run pet:validate
+python3 -m unittest discover -s tests -p 'test_*.py'
+python3 lumi.py doctor
 ```
 
-`pet:build` 将 `workflows/lumi-actions-v3/frames/jumping/` 合入 v2 图集，只替换跳跃行。9 类动作和 16 个视线方向已经包含在成品里。`pet:extract` 从现有 `decoded/jumping.png` 重新切出跳跃帧，运行前应保留修改记录。
+测试覆盖原生包发现契约、安装幂等性、旧版保留、导出、备份、恢复、失败回退和损坏备份拒绝。宿主读取格式经本机静态代码检查；刷新后实际选择新条目属于 App 内步骤。
 
-校验包含尺寸、透明通道、9 类动作帧、16 个视线方向以及上一版保留行；还会核对视觉审核记录中的 SHA-256。修改图集后需要重新做视觉审核并更新 `workflows/lumi-actions-v3/qa/package-check.json`，不能只把校验标记改为通过。
-
-项目提供已有素材的处理流程；重新生成 AI 源图需要另行使用图像生成工具，提示词已经保留。
-
-## 安装原生 Pet
-
-先只检查安装目标：
-
-```sh
-npm run pet:install -- --dry-run
-```
-
-确认后安装：
-
-```sh
-npm run pet:install
-```
-
-默认目标为 `${CODEX_HOME:-~/.codex}/pets/lumi`，也可以用 `--dest /path/to/lumi` 指定其他目标。更新已有 Lumi 时会将整个旧目录备份到目标父目录的 `.lumi-backups/`，替换失败会恢复旧目录。备份目录对应当前安装环境，不在项目 Git 中。
-
-本次项目整合没有执行真实宠物安装。历史成品目录里的旧安装入口保留作记录，日常使用根目录的 `pet:install`。
-
-## 验证
-
-```sh
-npm test
-npm run pet:validate
-```
-
-测试覆盖 MCP 初始化、工具调用与参数校验、HTML 资源读取，以及安装、备份、失败回退、dry-run 和拒绝覆盖其他宠物。已有素材的视觉审核见 `workflows/lumi-actions-v3/qa/`。迁移和本次验证说明见 [docs/MIGRATION.md](docs/MIGRATION.md)。
+Git 已初始化，原工程完整收纳并保留来源清单。原始目录仍保留作为备份。无需运行 Node 服务即可安装到原生 Mini & Pets。

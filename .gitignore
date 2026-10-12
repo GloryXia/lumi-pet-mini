@@ -10,3 +10,4 @@ backups/
 .tmp/
 coverage/
 *.log
+dist/

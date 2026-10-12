@@ -4,27 +4,27 @@
   "files": [
     {
       "source": "work/lumi-chatgpt-app/server.js",
-      "target": "apps/mini/server.js",
+      "target": "legacy/chatgpt-mcp-widget/server.js",
       "source_sha256": "0fdbdd32413913e5da03127f9bd1c0357078d42a2bd86791e9f6e0317b5e234d"
     },
     {
       "source": "work/lumi-chatgpt-app/package-lock.json",
-      "target": "package-lock.json",
+      "target": "legacy/chatgpt-mcp-widget/package-lock.json",
       "source_sha256": "983d122db7b17d407538d2a8024c172a63aa17f16903822cd361b9dd74fb72b7"
     },
     {
       "source": "work/lumi-chatgpt-app/package.json",
-      "target": "apps/mini/package.json",
+      "target": "legacy/chatgpt-mcp-widget/package.json",
       "source_sha256": "fe781678ab825169d874c7b10f2a36d1555b15dd0fd13b69793ca2fce9ea2fee"
     },
     {
       "source": "work/lumi-chatgpt-app/public/lumi-widget.html",
-      "target": "apps/mini/public/lumi-widget.html",
+      "target": "legacy/chatgpt-mcp-widget/public/lumi-widget.html",
       "source_sha256": "4f87f3db4039e054aba4c12e990e5a867b7c90f671adc6b0824cf88f268e555f"
     },
     {
       "source": "work/lumi-chatgpt-app/assets/lumi.webp",
-      "target": "apps/mini/assets/lumi.webp",
+      "target": "legacy/chatgpt-mcp-widget/assets/lumi.webp",
       "source_sha256": "c13de2cb095951e62c556c7eb399d5cac2aa8e4f9f7dc5bb73a8a7222743c840"
     },
     {

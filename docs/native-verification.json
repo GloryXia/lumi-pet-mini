@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-12",
+  "host": {
+    "detected": true,
+    "app": "/Applications/ChatGPT.app",
+    "bundle_id": "com.openai.codex",
+    "version": "26.1007.30912",
+    "local_pet_loader_detected": true,
+    "compatible": true,
+    "loader_file": ".vite/build/src-BJv5Mk7n.js",
+    "inspection": "Read-only installed loader inspection; no host binaries or settings are modified."
+  },
+  "native_package": {
+    "ok": true,
+    "id": "lumi-project",
+    "sha256": "cbc4f4d44ce3c4e1036c0b9fa354b20a7e59591b37e7957f9691677f1d89154d",
+    "animation_states": 9,
+    "look_directions": 16
+  },
+  "installation": {
+    "pet_root": "/Users/xiachao/.codex/pets",
+    "current_release_id": "lumi-project-cbc4f4d44ce3",
+    "installed": [
+      {
+        "directory": "/Users/xiachao/.codex/pets/lumi-project-cbc4f4d44ce3",
+        "host_id": "custom:lumi-project-cbc4f4d44ce3",
+        "current": true,
+        "ok": true,
+        "sha256": "cbc4f4d44ce3c4e1036c0b9fa354b20a7e59591b37e7957f9691677f1d89154d"
+      }
+    ],
+    "legacy_lumi_present": true,
+    "note": "File status does not imply selection in the app. Refresh My pets and choose the project entry."
+  },
+  "tests_passed": 9,
+  "ui_selection": "Pending user refresh and selection in Mini & Pets; native app automation is blocked by the computer tool."
+}

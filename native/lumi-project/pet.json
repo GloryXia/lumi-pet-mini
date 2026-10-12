@@ -1,0 +1,7 @@
+{
+  "id": "lumi-project",
+  "displayName": "露米 Lumi · 项目版",
+  "description": "由 lumi-pet-mini 项目维护的露米原生宠物。",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

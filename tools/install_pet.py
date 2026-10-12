@@ -1,5 +1,6 @@
 """Install the validated Lumi package, keeping a full backup on updates."""
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -9,8 +10,10 @@ from datetime import datetime, timezone
 from validate_pet import PACKAGE, validate
 
 
-def install(destination, dry_run=False):
-    report = validate()
+def install(destination, dry_run=False, package=PACKAGE, force=False):
+    package = Path(package)
+    report = validate(package)
+    package_manifest = json.loads((package / 'pet.json').read_text())
     destination = Path(destination).expanduser().absolute()
     if destination.is_symlink():
         raise ValueError('Destination must not be a symlink')
@@ -18,8 +21,16 @@ def install(destination, dry_run=False):
         manifest = destination / 'pet.json'
         if not manifest.is_file() or manifest.is_symlink():
             raise ValueError('Existing destination is not a pet package')
-        if json.loads(manifest.read_text()).get('id') != 'lumi':
+        if json.loads(manifest.read_text()).get('id') != package_manifest['id']:
             raise ValueError('Refusing to replace a different pet')
+        sprite = destination / package_manifest['spritesheetPath']
+        if sprite.is_symlink():
+            raise ValueError('Installed sprite must not be a symlink')
+        if (not force and sprite.is_file()
+                and json.loads(manifest.read_text()) == package_manifest
+                and hashlib.sha256(sprite.read_bytes()).hexdigest() == report['sha256']):
+            return {**report, 'destination': str(destination), 'dry_run': dry_run,
+                    'already_installed': True, 'backup': None}
     report.update(destination=str(destination), dry_run=dry_run)
     if dry_run:
         return report
@@ -28,7 +39,7 @@ def install(destination, dry_run=False):
     backup = None
     try:
         for name in ('pet.json', 'spritesheet.webp'):
-            shutil.copy2(PACKAGE / name, staged / name)
+            shutil.copy2(package / name, staged / name)
         if destination.exists():
             backup_root = destination.parent / '.lumi-backups'
             backup_root.mkdir(exist_ok=True)

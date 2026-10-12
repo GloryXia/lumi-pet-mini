@@ -1,0 +1,13 @@
+{
+  "project_id": "lumi-project",
+  "release_version": "1.0.0",
+  "host": "com.openai.codex",
+  "target": "Mini & Pets / My pets",
+  "package_directory": "native/lumi-project",
+  "sprite_version": 2,
+  "installation_id_strategy": "project-id plus first 12 characters of sprite SHA-256",
+  "dimensions": [
+    1536,
+    2288
+  ]
+}

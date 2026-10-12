@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { once } from 'node:events';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import { createHttpServer } from '../apps/mini/server.js';
+import { createHttpServer } from '../server.js';
 
 let server, base;
 before(async () => {

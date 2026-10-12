@@ -1,8 +1,10 @@
-"""Compatibility entry point for the portable, validated installer."""
+"""Compatibility entry point for the native Codex App project installer."""
 from pathlib import Path
-import runpy
 import sys
 
 tools = Path(__file__).resolve().parents[2] / 'tools'
 sys.path.insert(0, str(tools))
-runpy.run_path(str(tools / 'install_pet.py'), run_name='__main__')
+from native_pet import main
+
+if __name__ == '__main__':
+    raise SystemExit(main(['install', *sys.argv[1:]]))
