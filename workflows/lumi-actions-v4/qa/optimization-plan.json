@@ -1,0 +1,59 @@
+{
+  "status": "completed",
+  "image_generation_channel": "built-in image_gen",
+  "last_attempt": "2026-10-12",
+  "error": null,
+  "target_rows": [
+    1,
+    2
+  ],
+  "preserve_other_rows_pixel_exact": true,
+  "running": {
+    "frames": 8,
+    "durations_ms": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "cycle_ms": 1060,
+    "average_fps": 7.547169811320754,
+    "goals": [
+      "alternating leg strides",
+      "small pose increments at low playback FPS",
+      "stable head position and common character scale",
+      "low-motion landing/recovery at the 220ms final frame",
+      "continuous frame 8 to frame 1 transition"
+    ]
+  },
+  "jumping_reference_only": {
+    "frames": 5,
+    "durations_ms": [
+      140,
+      140,
+      140,
+      140,
+      280
+    ],
+    "cycle_ms": 840,
+    "average_fps": 5.9523809523809526,
+    "will_change": false
+  },
+  "prompts": [
+    "prompts/running-right.md",
+    "prompts/running-left.md"
+  ],
+  "sha256": "a0a604d663f314c570411b13bb79b1e3cc242c56c475a8db960cbef9e54a2d53",
+  "final_prompts": [
+    "prompts/running-right-refined.md",
+    "prompts/running-left-refined.md"
+  ],
+  "final_sources": [
+    "running-right-final-source.png",
+    "running-left-final-source.png"
+  ]
+}

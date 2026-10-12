@@ -1,6 +1,8 @@
 import contextlib
 import io
 import json
+import hashlib
+import shutil
 from pathlib import Path
 import sys
 import tempfile
@@ -76,3 +78,25 @@ class NativeLifecycleTests(unittest.TestCase):
             receipt.write_text(json.dumps(obj))
             with self.assertRaisesRegex(ValueError, 'installation ID'):
                 native_pet.restore(backup, tmp)
+
+    def test_retiring_old_release_keeps_current_release_and_can_be_restored(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            current = self.call('install', '--pets-root', tmp)
+            old_sheet = native_pet.ROOT / 'assets/pets/lumi-actions-v3/spritesheet.webp'
+            old_id = 'lumi-project-' + hashlib.sha256(old_sheet.read_bytes()).hexdigest()[:12]
+            if old_id == native_pet.release_id():
+                self.skipTest('Current package is the original v3 release')
+            old = Path(tmp) / old_id
+            old.mkdir()
+            shutil.copy2(old_sheet, old / 'spritesheet.webp')
+            shutil.copy2(native_pet.PACKAGE / 'pet.json', old / 'pet.json')
+            removed = self.call('uninstall', '--pets-root', tmp, '--release-id', old_id)
+            self.assertFalse(old.exists())
+            self.assertTrue(Path(current['destination']).is_dir())
+            self.call('restore', removed['backup'], '--pets-root', tmp)
+            self.assertTrue(old.is_dir())
+
+    def test_old_release_option_does_not_accept_a_legacy_or_foreign_pet(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, 'installation ID'):
+                native_pet.remove(tmp, 'lumi')

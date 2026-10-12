@@ -1,4 +1,4 @@
-"""Copy the approved v3 atlas into the native deployment package."""
+"""Copy the current approved atlas into the native deployment package."""
 from pathlib import Path
 import json
 import shutil

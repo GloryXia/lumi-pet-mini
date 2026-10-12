@@ -40,14 +40,16 @@ python3 lumi.py install
 
 这是接入现有 App 的原生宠物扩展工程。Mini 的宿主功能直接复用 App；本项目没有实现另一套聊天窗口。官方操作说明见 [Pets](https://learn.chatgpt.com/docs/pets)，本机包格式与版本检查见 [native/README.md](native/README.md)。
 
+新版预览：[向右跑动](workflows/lumi-actions-v4/qa/previews/running-right.gif) · [向左跑动](workflows/lumi-actions-v4/qa/previews/running-left.gif)。重绘使用内置 image_gen，提示词和源图均已保存。
+
 ## 开发与发布
 
 ```sh
 # 校验当前素材与已有视觉审核
 python3 tools/validate_pet.py
 
-# 从 v2 图集和当前跳跃帧重新合成 v3
-python3 workflows/lumi-actions-v3/compose_package.py
+# 从 v3 图集和已审核的左右跑动帧重新合成 v4
+python3 workflows/lumi-actions-v4/compose_package.py
 
 # 同步并验证原生包
 python3 tools/build_native.py
@@ -60,7 +62,7 @@ python3 lumi.py doctor
 python3 lumi.py status
 ```
 
-当前图集是 1536 × 2288 RGBA WebP，包含 9 类动作和 16 个视线方向。视觉素材沿用原有 v3 成品。修改图集后应重新完成视觉 QA，更新审核记录，再构建原生包；校验会拒绝未经审核的图集。
+当前 v4 图集是 1536 × 2288 RGBA WebP，包含 9 类动作和 16 个视线方向。左右跑动按 8 帧、1060ms 的原生节奏优化，其余动作与 v3 逐像素一致。修改图集后应重新完成视觉 QA，更新审核记录，再构建原生包；校验会拒绝未经审核的图集。
 
 导出的 ZIP 包位于 `dist/`，含版本目录与 `pet.json`、`spritesheet.webp`。ZIP 是搬运包，不能假设宿主设置支持直接导入 ZIP：解压到目标机器 `CODEX_HOME/pets`，或在该机器运行本项目安装器。
 
@@ -78,6 +80,9 @@ python3 lumi.py install --force
 
 # 将当前项目版本移到可恢复的备份目录
 python3 lumi.py uninstall
+
+# 将指定的旧项目版本移到备份（版本ID可由 status 查看）
+python3 lumi.py uninstall --release-id lumi-project-VERSION_FINGERPRINT
 
 # 用命令输出中的备份路径恢复
 python3 lumi.py restore /path/to/pets/.lumi-backups/BACKUP_NAME

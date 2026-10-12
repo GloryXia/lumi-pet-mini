@@ -6,7 +6,9 @@ import re
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKAGE = ROOT / 'assets/pets/lumi-actions-v3'
+PROJECT = json.loads((ROOT / 'native/project.json').read_text())
+PACKAGE = ROOT / PROJECT.get('asset_package_directory', 'assets/pets/lumi-actions-v3')
+WORKFLOW = ROOT / PROJECT.get('workflow_directory', 'workflows/lumi-actions-v3')
 STATES = [('idle', 6), ('running-right', 8), ('running-left', 8),
           ('waving', 4), ('jumping', 5), ('failed', 8),
           ('waiting', 6), ('running', 6), ('review', 6)]
@@ -40,20 +42,22 @@ def validate_structure(package=PACKAGE):
 
 def validate(package=PACKAGE):
     report, sheet = validate_structure(package)
-    approval = json.loads((ROOT / 'workflows/lumi-actions-v3/qa/package-check.json').read_text())
+    approval = json.loads((WORKFLOW / 'qa/package-check.json').read_text())
     digest = report['sha256']
     if not approval.get('ok') or approval.get('visual_qa') != 'pass' or digest != approval['sha256']:
         raise ValueError('Atlas differs from the visually approved package')
-    base = Image.open(ROOT / 'assets/pets/lumi-actions-v2/spritesheet.webp').convert('RGBA')
+    base_directory = approval.get('preservation_base', 'assets/pets/lumi-actions-v2')
+    changed_rows = approval.get('changed_rows', [4])
+    base = Image.open(ROOT / base_directory / 'spritesheet.webp').convert('RGBA')
     for row in range(11):
         box = (0, row * 208, 1536, (row + 1) * 208)
-        if row != 4 and sheet.crop(box).tobytes() != base.crop(box).tobytes():
+        if row not in changed_rows and sheet.crop(box).tobytes() != base.crop(box).tobytes():
             raise ValueError(f'Unexpected change in preserved row {row}')
     for row, (name, count) in enumerate(STATES):
         for col in range(8):
             frame = sheet.crop((col * 192, row * 208, (col + 1) * 192, (row + 1) * 208))
             if col < count:
-                expected = Image.open(ROOT / f'workflows/lumi-actions-v3/final-frames/{name}/{col:02}.png').convert('RGBA')
+                expected = Image.open(WORKFLOW / f'final-frames/{name}/{col:02}.png').convert('RGBA')
                 if frame.tobytes() != expected.tobytes():
                     raise ValueError(f'Frame mismatch: {name}/{col:02}')
             elif row == 0 and col == 6:

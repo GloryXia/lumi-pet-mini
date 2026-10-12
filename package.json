@@ -1,6 +1,6 @@
 {
   "name": "lumi-pet-mini",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Native custom pet package for the Codex App Mini & Pets host",
   "scripts": {
@@ -10,8 +10,8 @@
     "native:export": "python3 lumi.py export",
     "native:restore": "python3 lumi.py restore",
     "pet:validate": "python3 tools/validate_pet.py",
-    "pet:build": "python3 workflows/lumi-actions-v3/compose_package.py",
-    "pet:extract": "python3 workflows/lumi-actions-v3/extract_alpha_row.py",
+    "pet:build": "python3 workflows/lumi-actions-v4/compose_package.py && python3 tools/build_native.py",
+    "pet:extract": "python3 workflows/lumi-actions-v4/extract_frames.py",
     "test": "python3 -m unittest discover -s tests -p \"test_*.py\"",
     "native:build": "python3 tools/build_native.py",
     "native:uninstall": "python3 lumi.py uninstall",

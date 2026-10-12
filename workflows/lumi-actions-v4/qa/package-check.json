@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "visual_qa": "pass",
+  "qa_note": "Reviewed both normalized 8-frame contact sheets: identity and directional view retained, consistent scale/head registration, complete silhouettes, compact pose changes and stable low-motion frame 8. Encoded GIF previews verified at 120ms × 7 + 220ms. Native App UI playback was not inspected. Other nine atlas rows are pixel-exact vs v3.",
+  "sha256": "a0a604d663f314c570411b13bb79b1e3cc242c56c475a8db960cbef9e54a2d53",
+  "id": "lumi",
+  "spriteVersionNumber": 2,
+  "changed_rows": [
+    1,
+    2
+  ],
+  "preservation_base": "assets/pets/lumi-actions-v3"
+}

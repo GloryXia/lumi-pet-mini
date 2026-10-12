@@ -150,12 +150,16 @@ def restore(backup, root=None):
     return {'ok': True, 'restored': str(target), 'previous_install_backup': str(saved_current) if saved_current else None}
 
 
-def remove(root=None):
+def remove(root=None, installation_id=None):
     root = Path(root or pet_root()).expanduser().absolute()
-    target = destination(root)
+    if installation_id is not None and not re.fullmatch(r'lumi-project-[0-9a-f]{12}', installation_id):
+        raise ValueError('Invalid project installation ID')
+    target = root / installation_id if installation_id else destination(root)
     if not target.exists():
         return {'ok': True, 'already_absent': True, 'destination': str(target)}
-    validate(target)
+    report, _ = validate_structure(target)
+    if report['id'] != PROJECT_ID or target.name != f"{PROJECT_ID}-{report['sha256'][:12]}":
+        raise ValueError('Installed project identity or version fingerprint changed')
     backup_root = root / '.lumi-backups'
     backup_root.mkdir(exist_ok=True)
     backup = backup_root / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
@@ -192,6 +196,8 @@ def main(argv=None):
             p.add_argument('--force', action='store_true')
         if command == 'restore':
             p.add_argument('backup', type=Path)
+        if command == 'uninstall':
+            p.add_argument('--release-id', help='An older lumi-project version ID to back up and remove')
     p = sub.add_parser('export')
     p.add_argument('--output', type=Path)
     sub.add_parser('open-settings', help='Open the host settings using its public URL scheme')
@@ -215,7 +221,7 @@ def main(argv=None):
         elif args.command == 'restore':
             result = restore(args.backup, args.pets_root)
         elif args.command == 'uninstall':
-            result = remove(args.pets_root)
+            result = remove(args.pets_root, args.release_id)
         else:
             if sys.platform == 'darwin':
                 subprocess.run(['open', 'codex://settings'], check=True)

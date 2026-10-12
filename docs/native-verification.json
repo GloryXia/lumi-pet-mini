@@ -1,5 +1,6 @@
 {
   "date": "2026-10-12",
+  "project_version": "1.1.0",
   "host": {
     "detected": true,
     "app": "/Applications/ChatGPT.app",
@@ -13,25 +14,34 @@
   "native_package": {
     "ok": true,
     "id": "lumi-project",
-    "sha256": "cbc4f4d44ce3c4e1036c0b9fa354b20a7e59591b37e7957f9691677f1d89154d",
+    "sha256": "a0a604d663f314c570411b13bb79b1e3cc242c56c475a8db960cbef9e54a2d53",
     "animation_states": 9,
     "look_directions": 16
   },
   "installation": {
     "pet_root": "/Users/xiachao/.codex/pets",
-    "current_release_id": "lumi-project-cbc4f4d44ce3",
+    "current_release_id": "lumi-project-a0a604d663f3",
     "installed": [
       {
-        "directory": "/Users/xiachao/.codex/pets/lumi-project-cbc4f4d44ce3",
-        "host_id": "custom:lumi-project-cbc4f4d44ce3",
+        "directory": "/Users/xiachao/.codex/pets/lumi-project-a0a604d663f3",
+        "host_id": "custom:lumi-project-a0a604d663f3",
         "current": true,
         "ok": true,
-        "sha256": "cbc4f4d44ce3c4e1036c0b9fa354b20a7e59591b37e7957f9691677f1d89154d"
+        "sha256": "a0a604d663f314c570411b13bb79b1e3cc242c56c475a8db960cbef9e54a2d53"
       }
     ],
-    "legacy_lumi_present": true,
+    "legacy_lumi_present": false,
     "note": "File status does not imply selection in the app. Refresh My pets and choose the project entry."
   },
-  "tests_passed": 9,
-  "ui_selection": "Pending user refresh and selection in Mini & Pets; native app automation is blocked by the computer tool."
+  "tests_passed": 11,
+  "cloud_pet_id": "pet_6accd8cf366c8191b7b0663e2ce32a85",
+  "cloud_selection_preserved": "default",
+  "cloud_spritesheet_validation": {
+    "valid": true,
+    "width": 1536,
+    "height": 2288,
+    "sprite_version": 2,
+    "errors": []
+  },
+  "ui_selection": "Refresh Mini & Pets and choose 露米 Lumi · 项目版; native app UI was not automated."
 }
